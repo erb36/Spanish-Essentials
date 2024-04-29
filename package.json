@@ -1,0 +1,25 @@
+{
+  "name": "spanish-essentials",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/assets/css/input.css -o ./dist/assets/css/main.css --watch",
+    "build-css": "tailwindcss -i ./src/assets/css/input.css -o ./dist/assets/css/main.min.css --minify",
+    "copy-html": "cp ./src/index.html ./dist/index.html && sed -i '' 's#../dist/assets/css/main.css#assets/css/main.min.css#' ./dist/index.html",
+    "copy-img": "cp -R ./src/assets/img/. ./dist/assets/img/",
+    "copy-js": "cp -R ./src/assets/js/. ./dist/assets/js/",
+    "minify-js": "uglifyjs ./dist/assets/js/app.js -o ./dist/assets/js/app.js",
+    "build": "npm run build-css && npm run copy-html && npm run copy-img && npm run copy-js && npm run minify-js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^7.0.0",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.3",
+    "tw-elements": "^2.0.0",
+    "uglify-js": "^3.17.4"
+  }
+}

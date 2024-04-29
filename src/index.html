@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
@@ -7,10 +7,10 @@
     <link href="../dist/assets/css/main.css" rel="stylesheet" >
   </head>
   <body>
-    <!-- Main navigation container -->
+    <!-- Header and navigation container -->
     <header>
       <nav
-        class="relative flex w-full flex-nowrap items-center justify-between bg-zinc-50 py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
+        class="fixed top-0 flex w-full flex-nowrap items-center justify-between bg-spanishYellowLight py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
         data-twe-navbar-ref
       >
         <div class="flex w-full flex-wrap items-center justify-between px-3">
@@ -64,9 +64,9 @@
                 <a
                   class="text-black dark:text-white lg:px-2"
                   aria-current="page"
-                  href="#"
+                  href="#intro"
                   data-twe-nav-link-ref
-                  >Home</a
+                  >Intro</a
                 >
               </li>
               <!-- Features link -->
@@ -107,11 +107,35 @@
           </div>
         </div>
       </nav>
+      <!-- Banner -->   
+      <div class="pt-10">
+        <picture>
+          <source media="(max-width:1440px)" srcset="assets/img/header/SE_1440.png">
+          <source media="(max-width:640px )" srcset="assets/img/header/SE_640.png">
+          <img src="assets/img/header/SpainEssen_Banner.png" alt="" >
+        </picture>
+      </div>
     </header>
 
-    <main class="md:w-3/4 mx-auto bg-yellow-100">
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-
+    <!-- tempory margin and padding -->
+    <main class="w-3/4 mx-auto bg-yellow-100  m-5 p-5">
+      <!-- Intro section -->
+      <section id="intro" class="container bg-spanishYellow mx-auto mb-10 rounded-lg shadow-xl">
+        <div class="flex flex-col-reverse xl:flex-row">
+          <div class="flex flex-col w2/3">
+            <h1 class="font-bold text-4xl mt-5 mx-auto">First Contact</h1>
+            <p class="text-2xl mx-auto w-2/3 mb-10">
+              Here you can see at a glance the Spanish key language related to
+              first contact: greetings, addressing people and introducing
+              someone.
+            </p>
+            <p class="text-1xl mx-auto w-2/3 mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempora nisi eveniet voluptates asperiores fugiat delectus sunt laudantium assumenda quam culpa facere veniam magnam ducimus veritatis, quaerat exercitationem. Sed odit reprehenderit, temporibus eius aut natus laudantium qui quam architecto delectus.</p>
+          </div>
+          <div class="lg:shrink-0 lg:grow-0 self-center m-5">
+            <img src="/src/assets/img/First contact.png" alt="" />
+          </div>
+        </div>
+      </section>
       <!-- accordion -->
       <div id="accordionExample5">
         <div

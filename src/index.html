@@ -10,7 +10,7 @@
     <!-- Header and navigation container -->
     <header>
       <nav
-        class="fixed top-0 flex w-full flex-nowrap items-center justify-between bg-spanishYellowLight py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
+        class="fixed top-0 z-10 flex w-full flex-nowrap items-center justify-between bg-spanishYellowLight py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
         data-twe-navbar-ref
       >
         <div class="flex w-full flex-wrap items-center justify-between px-3">
@@ -118,9 +118,9 @@
     </header>
 
     <!-- tempory margin and padding -->
-    <main class="w-3/4 mx-auto bg-yellow-100  m-5 p-5">
+    <main class="w-full md:w-3/4 mx-auto bg-spanishYellowLight mt-5 px-5 py-1 rounded-md">
       <!-- Intro section -->
-      <section id="intro" class="container bg-spanishYellow mx-auto mb-10 rounded-lg shadow-xl">
+      <section id="intro" class=" bg-spanishYellow mx-auto m-5 rounded-lg shadow-lg">
         <div class="flex flex-col-reverse xl:flex-row">
           <div class="flex flex-col w2/3">
             <h1 class="font-bold text-4xl mt-5 mx-auto">First Contact</h1>
@@ -137,161 +137,517 @@
         </div>
       </section>
       <!-- accordion -->
-      <div id="accordionExample5">
-        <div
-          class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
-        >
-          <h2 class="mb-0" id="headingOne5">
-            <button
-              class="group relative flex w-full items-center rounded-t-lg border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
-              type="button"
-              data-twe-collapse-init
-              data-twe-collapse-collapsed
-              data-twe-target="#collapseOne5"
-              aria-expanded="false"
-              aria-controls="collapseOne5"
-            >
-              Accordion Item #1
-              <span
-                class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                  />
-                </svg>
-              </span>
-            </button>
-          </h2>
+      <section>
+        <div id="accordionExample5">
           <div
-            id="collapseOne5"
-            class="!visible hidden"
-            data-twe-collapse-item
-            aria-labelledby="headingOne5"
+            class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
           >
-            <div class="px-5 py-4">
-              <strong>This is the first item's accordion body.</strong> It is
-              shown by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+            <h2 class="mb-0" id="headingOne5">
+              <button
+                class="group relative flex w-full items-center rounded-t-lg border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
+                type="button"
+                data-twe-collapse-init
+                data-twe-collapse-collapsed
+                data-twe-target="#collapseOne5"
+                aria-expanded="false"
+                aria-controls="collapseOne5"
+              >
+                Accordion Item #1
+                <span
+                  class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </h2>
+            <div
+              id="collapseOne5"
+              class="!visible hidden"
+              data-twe-collapse-item
+              aria-labelledby="headingOne5"
+            >
+              <div class="px-5 py-4">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that just
+                about any HTML can go within the <code>.accordion-body</code>,
+                though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div
+            class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
+          >
+            <h2 class="mb-0" id="headingTwo5">
+              <button
+                class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
+                type="button"
+                data-twe-collapse-init
+                data-twe-collapse-collapsed
+                data-twe-target="#collapseTwo5"
+                aria-expanded="false"
+                aria-controls="collapseTwo5"
+              >
+                Accordion Item #2
+                <span
+                  class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo5"
+              class="!visible hidden"
+              data-twe-collapse-item
+              aria-labelledby="headingTwo5"
+            >
+              <div class="px-5 py-4">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that just
+                about any HTML can go within the <code>.accordion-body</code>,
+                though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-b-lg border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
+          >
+            <h2 class="mb-0" id="headingThree5">
+              <button
+                class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none data-[twe-collapse-collapsed]:rounded-b-lg data-[twe-collapse-collapsed]:transition-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
+                type="button"
+                data-twe-collapse-init
+                data-twe-collapse-collapsed
+                data-twe-target="#collapseThree5"
+                aria-expanded="false"
+                aria-controls="collapseThree5"
+              >
+                Accordion Item #3
+                <span
+                  class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </h2>
+            <div
+              id="collapseThree5"
+              class="!visible hidden"
+              data-twe-collapse-item
+              aria-labelledby="headingThree5"
+            >
+              <div class="px-5 py-4">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that just
+                about any HTML can go within the <code>.accordion-body</code>,
+                though the transition does limit overflow.
+              </div>
             </div>
           </div>
         </div>
-        <div
-          class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
-        >
-          <h2 class="mb-0" id="headingTwo5">
-            <button
-              class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
-              type="button"
-              data-twe-collapse-init
-              data-twe-collapse-collapsed
-              data-twe-target="#collapseTwo5"
-              aria-expanded="false"
-              aria-controls="collapseTwo5"
-            >
-              Accordion Item #2
-              <span
-                class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
+      </section>
+
+      <!-- test card  with nav section (working) -->
+
+      <section class="mt-5 flex flex-col lg:flex-row">
+          <div class="block w-4/5 lg:w-2/5 rounded-lg bg-white text-center text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white mx-auto px-2">
+            <!--Pills navigation-->
+              <ul
+              class="mb-5 flex list-none flex-col flex-wrap ps-0 md:flex-row"
+              id="pills-tab"
+              role="tablist"
+              data-twe-nav-ref>
+              <li role="presentation">
+                <a
+                  href="#pills-home"
+                  class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
+                  id="pills-home-tab"
+                  data-twe-toggle="pill"
+                  data-twe-target="#pills-home"
+                  data-twe-nav-active
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                  >Hello</a
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                  />
-                </svg>
-              </span>
-            </button>
-          </h2>
-          <div
-            id="collapseTwo5"
-            class="!visible hidden"
-            data-twe-collapse-item
-            aria-labelledby="headingTwo5"
-          >
-            <div class="px-5 py-4">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div
-          class="rounded-b-lg border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
-        >
-          <h2 class="mb-0" id="headingThree5">
-            <button
-              class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none data-[twe-collapse-collapsed]:rounded-b-lg data-[twe-collapse-collapsed]:transition-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
-              type="button"
-              data-twe-collapse-init
-              data-twe-collapse-collapsed
-              data-twe-target="#collapseThree5"
-              aria-expanded="false"
-              aria-controls="collapseThree5"
-            >
-              Accordion Item #3
-              <span
-                class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
+              </li>
+              <li role="presentation">
+                <a
+                  href="#pills-profile"
+                  class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
+                  id="pills-profile-tab"
+                  data-twe-toggle="pill"
+                  data-twe-target="#pills-profile"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                  >Goodbye</a
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                  />
-                </svg>
-              </span>
-            </button>
-          </h2>
-          <div
-            id="collapseThree5"
-            class="!visible hidden"
-            data-twe-collapse-item
-            aria-labelledby="headingThree5"
-          >
-            <div class="px-5 py-4">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
+              </li>
+              
+              </ul>
+              <div>
+              <h2 class="text-2xl font-bold">Greetings: saying hello and goodbye (part i)</h2>
+                <p>The tables below show the Spanish ways to say hello and goodbye.
+                  For practice, you can hide the Spanish and English columns and
+                  listen to audio prompts.</p>
+              </div>
+
+              <!--Pills content-->
+              <div class="mb-6">
+              <div
+                class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+                data-twe-tab-active>
+                <div class="bg-spanishYellowLight m-5 p-5 rounded-md shadow-xl">
+                  <audio
+                    id="player_a1"
+                    preload="none"
+                    src="/src/assets/media/a1.mp3"
+                    type="audio/mp3"
+                  ></audio>
+                  <table class="table-auto">
+                    <caption class="caption-top text-2xl">
+                      To say hello
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th class="">Spanish (click to hide)</th>
+                        <th class="">English (click to hide)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td
+                          class="spanish"
+                          onclick="document.getElementById('player_a1').play()"
+                        >
+                          <button>¡Hola!</button>
+                        </td>
+                        <td class="english">Hello (formal and informal)</td>
+                      </tr>
+                      <tr>
+                        <td class="spanish">Buenos dias</td>
+                        <td class="english">Good morning</td>
+                      </tr>
+                      <tr>
+                        <td class="spanish">Buenas tardes</td>
+                        <td class="english">Good afternoon</td>
+                      </tr>
+                      <tr>
+                        <td class="spanish">Buenas noches</td>
+                        <td class="english">Good evening/Good nigh</td>
+                      </tr>
+                      <tr>
+                        <td class="spanish">¡Qué tal!</td>
+                        <td class="english">What's new</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab">
+                <div class="bg-spanishYellowLight m-5 p-5 rounded-md shadow-xl">
+                  <table>
+                    <caption class="caption-top text-2xl">
+                      To say goodbye
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th class="">
+                          <button class="border border-slate-950 rounded-md">
+                            Spanish (click to hide)
+                          </button>
+                        </th>
+                        <th class="">
+                          <button
+                            type="checkbox"
+                            class="bg-spanishYellowLight border-2 px-1 border-slate-700 rounded-md shadow-md hover:bg-spanishYellow active:bg-spanishYellowLight"
+                          >
+                            English (click to hide)
+                          </button>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="">
+                      <tr>
+                        <td class="spanish">Chao</td>
+                        <td class="english">Bye bye (informal)</td>
+                      </tr>
+                      <tr>
+                        <td class="spanish">Adiós</td>
+                        <td class="english">Goodbye</td>
+                      </tr>
+                      <tr>
+                        <td class="spanish">Adiós, buenas noches</td>
+                        <td class="english">Bye, (have a) good evening</td>
+                      </tr>
+                      <tr>
+                        <td class="spanish">Nos vemos</td>
+                        <td class="english">See you soon (formal)</td>
+                      </tr>
+                      <tr>
+                        <td class="spanish">Hasta pronto</td>
+                        <td class="english">See you soon</td>
+                      </tr>
+                      <tr>
+                        <td class="spanish">Hasta luego</td>
+                        <td class="english">See you later</td>
+                      </tr>
+                      <tr>
+                        <td class="spanish">Hasta la vista</td>
+                        <td class="english">See you later</td>
+                      </tr>
+                      <tr>
+                        <td class="spanish">Hasta mañana</td>
+                        <td class="english">See you tomorrow</td>
+                      </tr>
+                      <tr>
+                        <td class="spanish">Hasta el lunes</td>
+                        <td class="english">
+                          (+ other days of the week) See you on Monday
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              </div>
           </div>
-        </div>
-      </div>
+
+
+            <!-- part 2 -->
+
+
+
+            <div class="block w-4/5 lg:w-3/6 rounded-lg bg-white text-center text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white mx-auto px-2 mt-2 lg:mt-0">
+              <!--Pills navigation-->
+                <ul
+                class="mb-5 flex list-none flex-col flex-wrap ps-0 md:flex-row"
+                id="pills-tab"
+                role="tablist"
+                data-twe-nav-ref>
+                <li role="presentation">
+                  <a
+                    href="#pills-home2"
+                    class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
+                    id="pills-home2-tab"
+                    data-twe-toggle="pill"
+                    data-twe-target="#pills-home2"
+                    data-twe-nav-active
+                    role="tab"
+                    aria-controls="pills-home2"
+                    aria-selected="true"
+                    >Hello</a
+                  >
+                </li>
+                <li role="presentation">
+                  <a
+                    href="#pills-profile2"
+                    class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
+                    id="pills-profile2-tab"
+                    data-twe-toggle="pill"
+                    data-twe-target="#pills-profile2"
+                    role="tab"
+                    aria-controls="pills-profile2"
+                    aria-selected="false"
+                    >Goodbye</a
+                  >
+                </li>
+                
+                </ul>
+                <div>
+                <h2 class="text-2xl font-bold">Greetings: saying hello and goodbye (part ii)</h2>
+                  <p>Listen to people saying hello and goodbye by clicking on the clicking on the audio icons. The key language is summarised in the table.</p>
+                </div>
+  
+                <!--Pills content-->
+                <div class="mb-6">
+                <div
+                  class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                  id="pills-home2"
+                  role="tabpanel"
+                  aria-labelledby="pills-home2-tab"
+                  data-twe-tab-active>
+                  <div class="bg-spanishYellowLight m-5 p-5 rounded-md shadow-xl">
+                    <table class="table-auto">
+                      <thead>
+                        <tr>
+                          <th class="">Formal request</th>
+                          <th class="">Formal response</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="spanish">Hola, Señora Martínez, ¿cómo está?</td>
+                          <td class="english">'Hello Mrs. Martínez, how are you?'</td>
+                        </tr>
+                        <tr>
+                          <td class="spanish">Muy bien, gracias. ¿Y usted?</td>
+                          <td class="english">'Very well, thanks. And you?'</td>
+                        </tr>
+                        <tr>
+                          <td class="spanish">Buenos días, señor González, ¿Cómo está?</td>
+                          <td class="english">'Hello Mr. González, how are you?'</td>
+                        </tr>
+                        <tr>
+                          <td class="spanish">Bien, Gracias. Y usted, ¿cómo está?</td>
+                          <td class="english">'Fine, thank you. How about you?'</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div
+                  class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                  id="pills-profile2"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile2-tab">
+                  <div class="bg-spanishYellowLight m-5 p-5 rounded-md shadow-xl">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th class="">Informal request
+                          </th>
+                          <th class="">Informal response
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="">
+                        <tr>
+                          <td class="spanish">Hola. ¿Como estás?</td>
+                          <td class="english">'Hello, how are you?'</td>
+                        </tr>
+                        <tr>
+                          <td class="spanish">Bien, gracias. ¿Y tú?</td>
+                          <td class="english">'Fine thank you. And you?'</td>
+                        </tr>
+                        <tr>
+                          <td class="spanish">Así, Así… ¿Y tú?</td>
+                          <td class="english">So - so. And you?</td>
+                        </tr>
+                        <tr>
+                          <td class="spanish">Regular, ¿y tú?</td>
+                          <td class="english">'Not too bad. And you?'</td>
+                        </tr>
+                        <tr>
+                          <td class="spanish">Fatal</td>
+                          <td class="english">awful</td>
+                        </tr>
+                        <tr>
+                          <td class="spanish">Fenomenal. ¿Y tú qué tal?</td>
+                          <td class="english">Great. And you?</td>
+                        </tr>
+                        <tr>
+                          <td class="spanish">Desafortunadamente, no muy bien. ¿ Y Tú?</td>
+                          <td class="english">'Not so good, unfortunately. How about you?'</td>
+                        </tr>
+                        <tr>
+                          <td class="spanish">Hola, ¿Qué tal?</td>
+                          <td class="english">'Hi, how is it going?'</td>
+                        </tr>
+                        <tr>
+                          <td class="spanish">Todo bien. ¿Y Tú?</td>
+                          <td class="english">'All Fine. And you?'</td>
+                        </tr>
+                        <tr>
+                          <td>Todo bien, gracias. ¿Y tú?</td>
+                          <td>'Everything OK, thank you. And you?'</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                </div>
+            </div>
+      </section>
+
+      <!-- know-how -->
+      <section
+        class="flex flex-col bg-spanishYellow mx-auto my-10 w-2/3 rounded-lg p-3 shadow-xl"
+      >
+        <h2 class="mx-auto font-bold text-2xl">Know-how:</h2>
+
+        <p class="px-5">
+          <strong>'Hello' or 'goodbye'</strong> depend on the time of day. In
+          Spanish the day is divided into four parts: la manana (morning), la
+          tarde (afternoon), la noche (evening -night).
+        </p>
+        <p class="px-5">
+          <strong>'Buenos dias'</strong> is the right phrase to use until lunch
+          time (normally between 12.00 and 14.00).
+        </p>
+        <p class="px-5">
+          Use <strong>'Buenas Tardes'</strong> until 17.00/18.00 and
+          <strong>'buenas noches'</strong> s from dinner time (normally between
+          19.00 and 21.30) until you go to bed. Use
+          <strong>'buenas noches, hasta mañana'</strong> only to say goodbye to
+          someone before going home after dinner or to wish someone a good night
+          before they go to bed.
+        </p>
+      </section>
+
+      <!-- Addressing people: formality and informality -->
+
+      <section>
+        
+      </section>
+
+
     </main>
     <!-- end of accordion -->
     <!-- Footer -->

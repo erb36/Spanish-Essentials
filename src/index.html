@@ -136,7 +136,7 @@
           </div>
         </div>
       </section>
-      <!-- greetings accordion -->
+      <!-- accordion 1 -->
       <section class="border border-black">
         <div>
           <h2 class="text-2xl font-bold">Greetings: saying hello and goodbye (part i)</h2>
@@ -144,23 +144,25 @@
               For practice, you can hide the Spanish and English columns and
               listen to audio prompts.</p>
           </div>
-        <div id="accordionGreetings1">
+        <div id="accordion-container-1">
           <div
+            id="acc-con-1-item-1"
             class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
+            
           >
-            <h2 class="mb-0" id="headingOne1">
+            <h2 class="mb-0" id="acc-con-1-item-1-heading">
               <button
-                class="group relative flex w-full items-center rounded-t-lg border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
+                class="group accordion-item-button"
                 type="button"
                 data-twe-collapse-init
                 data-twe-collapse-collapsed
-                data-twe-target="#collapseOne1"
+                data-twe-target="#acc-con-1-item-1-collapse"
                 aria-expanded="false"
-                aria-controls="collapseOne1"
+                aria-controls="acc-con-1-item-1-collapse"
               >
                 Hello
                 <span
-                  class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                  class="accordion-chevron"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -177,15 +179,15 @@
                   </svg>
                 </span>
               </button>
-            </h2>
+            </h2><!-- end of #acc-con-1-item-1-heading -->
             <div
-              id="collapseOne1"
+              id="acc-con-1-item-1-collapse"
               class="!visible hidden"
               data-twe-collapse-item
-              aria-labelledby="headingOne1"
+              aria-labelledby="acc-con-1-item-1-heading"
             >
             <!-- accordion 1 hello contents -->
-              <div class="px-5 py-4"
+              <div class="px-5 py-4 border border-black"
               id="aac1">
                 <!-- item1 -->
                 <div class="flex justify-between border-b-2 w-2/3 mx-auto mb-5">
@@ -304,13 +306,19 @@
                 <!-- item5 end -->
               </div>
             </div>
-          </div>
+          </div> <!-- end of #acc-con-1-item-1 -->
+
+
+
+
+          
           <div
+            id="acc-con-1-item-2"
             class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
           >
             <h2 class="mb-0" id="headingTwo1">
               <button
-                class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
+                class="group accordion-item-button"
                 type="button"
                 data-twe-collapse-init
                 data-twe-collapse-collapsed
@@ -556,33 +564,46 @@
               <!-- item9 end -->
             </div>
             </div>
-          </div>
-        </div>
+          </div><!-- end of #acc-con-1-item-2 -->
+        </div> <!-- end of #accordion-container-1 -->
+
+
+
+
+
+
+
+
+
+
+
+
       </section>
       <br>
-      <!-- Greetings accordion 2 -->
+      <!-- accordion 2 -->
       <section class="border border-black">
         <div>
           <h2 class="text-2xl font-bold">Greetings: saying hello and goodbye (part ii)</h2>
             <p>Listen to people saying hello and goodbye by clicking on the clicking on the audio icons. The key language is summarised in the table.</p>
           </div>
-        <div id="accordionGreetings2">
+        <div id="accordion-container-2">
           <div
+            id="acc-con-2-item-1"
             class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
           >
-            <h2 class="mb-0" id="headingOne2">
+            <h2 class="mb-0" id="acc-con-2-item-1-heading">
               <button
-                class="group relative flex w-full items-center rounded-t-lg border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
+                class="group accordion-item-button"
                 type="button"
                 data-twe-collapse-init
                 data-twe-collapse-collapsed
-                data-twe-target="#collapseOne2"
+                data-twe-target="#acc-con-2-item-1-collapse"
                 aria-expanded="false"
-                aria-controls="collapseOne2"
+                aria-controls="acc-con-2-item-1-collapse"
               >
                 Hello
                 <span
-                  class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                  class="accordion-chevron"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -601,10 +622,10 @@
               </button>
             </h2>
             <div
-              id="collapseOne2"
+              id="acc-con-2-item-1-collapse"
               class="!visible hidden"
               data-twe-collapse-item
-              aria-labelledby="headingOne2"
+              aria-labelledby="acc-con-2-item-1-heading"
             >
             <!-- accordion 2 hello content -->
               <div class="px-5 py-4">
@@ -705,17 +726,18 @@
             </div>
           </div>
           <div
+          id="acc-con-2-item-2"
             class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
           >
-            <h2 class="mb-0" id="headingTwo2">
+            <h2 class="mb-0" id="acc-con-2-item-2-heading">
               <button
-                class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
+                class="group accordion-item-button"
                 type="button"
                 data-twe-collapse-init
                 data-twe-collapse-collapsed
-                data-twe-target="#collapseTwo2"
+                data-twe-target="#acc-con-2-item-2-collapse"
                 aria-expanded="false"
-                aria-controls="collapseTwo2"
+                aria-controls="acc-con-2-item-2-collapse"
               >
                 Goodbye
                 <span
@@ -738,10 +760,10 @@
               </button>
             </h2>
             <div
-              id="collapseTwo2"
+              id="acc-con-2-item-2-collapse"
               class="!visible hidden"
               data-twe-collapse-item
-              aria-labelledby="headingTwo2"
+              aria-labelledby="acc-con-2-item-2-heading"
             >
             <!-- accordion 2 goodbye content -->
               <div class="px-5 py-4">
@@ -983,7 +1005,6 @@
       </section>
 
       
-
       <!-- know-how -->
       <section
         class="flex flex-col bg-spanishYellow mx-auto my-10 w-2/3 rounded-lg p-3 shadow-xl"
@@ -1010,32 +1031,32 @@
       </section>
 
       <!-- Addressing people: formality and informality -->
-      <div class="container my-24 mx-auto md:px-6">
-
+        <!-- accordion 3 -->
         <section class="border border-black">
           <div>
             <h2 class="mb-5 text-center text-3xl font-bold">Addressing people: formality and informality</h2>
-            <h3 class="mb-12 text-center text-xl">Listen to formal and informal ways to address people by clicking on the audio icons. The key language is summarised in the table.</h3>
+            <p class="mb-12 text-center text-xl">Listen to formal and informal ways to address people by clicking on the audio icons. The key language is summarised in the table.</p>
           </div>
-          <div id="accordionAddressing3">
+          <div id="accordion-container-3">
             <!-- item 1 start -->
             <div
+              id="acc-con-3-item-1"
               class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
             >
-              <h2 class="mb-0" id="headingOne3">
+              <h2 class="mb-0" id="acc-con-3-item-1-heading">
                 <button
-                  class="group relative flex w-full items-center rounded-t-lg border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
+                  class="group accordion-item-button"
                   type="button"
                   data-twe-collapse-init
                   data-twe-collapse-collapsed
-                  data-twe-target="#collapseOne3"
+                  data-twe-target="#acc-con-3-item-1-collapse"
                   aria-expanded="false"
-                  aria-controls="collapseOne3"
+                  aria-controls="acc-con-3-item-1-collapse"
                 >
                 <!-- accordion title -->
                 Tú/vosotros - Informal &nbsp;&nbsp;&nbsp;&nbsp; usted/ustedes - Formal
                   <span
-                    class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                    class="accordion-chevron"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1054,10 +1075,10 @@
                 </button>
               </h2>
               <div
-                id="collapseOne3"
+                id="acc-con-3-item-1-collapse"
                 class="!visible hidden"
                 data-twe-collapse-item
-                aria-labelledby="headingOne3"
+                aria-labelledby="acc-con-3-item-1-heading"
               >
                 <!-- contents 1 start -->
                 <div class="flex justify-between border-b-2 w-2/3 mx-auto mb-5">
@@ -1157,113 +1178,6 @@
           </div>
         </section>
 
-
-
-        <!-- Section: Design Block -->
-        <section class="mb-32">
-          <h2 class="mb-5 text-center text-3xl font-bold">Addressing people: formality and informality</h2>
-          <h3 class="mb-12 text-center text-xl">Listen to formal and informal ways to address people by clicking on the audio icons. The key language is summarised in the table.</h3>
-
-          <div class="grid gap-6 lg:grid-cols-3 lg:gap-x-12">
-            <div class="mb-6 lg:mb-0">
-              <div
-                class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-                <div class="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center dark:border-opacity-10">
-                  <h3 class="mb-2 text-3xl">
-                    <strong>Tú/vosotros - Informal</strong>
-                  </h3>
-                </div>
-                <div class="p-6">
-                  <ol class="list-inside">
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>¿Cómo estás (tú)?
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>¿Cómo está (usted)?
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>¿Cómo están (ustedes)?
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>¿Cómo estáis?
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-
-            <div class="mb-6 lg:mb-0">
-              <div
-                class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-                <div class="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center dark:border-opacity-10">
-                  <h3 class="mb-2 text-3xl">
-                    <strong>usted/ustedes - Formal</strong>
-                  </h3>
-                </div>
-                <div class="p-6">
-                  <ol class="list-inside">
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>How are you? (talking to one person)
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>How are you? (talking to one person)
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>How are you? (talking to more than one person)
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>How are you? (talking to more than one person - in Spain)
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Section: Design Block -->
-      </div>
-      <!-- end of Container for alternate table/card design -->
-
       <!-- Know how section -->
       <section
         class="flex flex-col bg-spanishYellow mx-auto my-10 w-2/3 rounded-lg p-3 shadow-xl"
@@ -1289,35 +1203,34 @@
           The 'Usted' form can also be used to show respect (for example to an elderly person) or, conversely, to keep a certain distance. When you get to know someone a bit better, you can start using 'tú'. The best policy is to listen to how the Spanish speaking people address you and follow their example.
         </p>
       </section>
-      <!-- end of know how section -->
 
       <!-- Introducing someone: and this is... -->
-
-
       <section class="border border-black mb-5">
         <div>
-          <h5 class="mb-2 text-2xl font-bold text-center leading-tight">Introducing someone: and this is...</h5>
-          <h6 class="text-center">Listen to people introducing each other by clicking on the audio icons. The key language is summarised in the table.</h6>
+          <h2 class="mb-2 text-2xl font-bold text-center leading-tight">Introducing someone: and this is...</h2>
+          <p class="text-center">Listen to people introducing each other by clicking on the audio icons. The key language is summarised in the table.</p>
         </div>
-        <div id="accordionIntroducing4">
+        <!-- accordion 4 -->
+        <div id="accordion-container-4">
           <!-- item 1 start -->
           <div
+          id="acc-con-4-item-1"
             class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
           >
-            <h2 class="mb-0" id="headingOne4">
+            <h2 class="mb-0" id="acc-con-4-item-1-heading">
               <button
-                class="group relative flex w-full items-center rounded-t-lg border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
+                class="group accordion-item-button"
                 type="button"
                 data-twe-collapse-init
                 data-twe-collapse-collapsed
-                data-twe-target="#collapseOne4"
+                data-twe-target="#acc-con-4-item-1-collapse"
                 aria-expanded="false"
-                aria-controls="collapseOne4"
+                aria-controls="acc-con-4-item-1-collapse"
               >
                 <!-- item 1 title -->
                 Introduction and Response
                 <span
-                  class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                  class="accordion-chevron"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1336,10 +1249,10 @@
               </button>
             </h2>
             <div
-              id="collapseOne4"
+              id="acc-con-4-item-1-collapse"
               class="!visible hidden"
               data-twe-collapse-item
-              aria-labelledby="headingOne4"
+              aria-labelledby="acc-con-4-item-1-heading"
             >
             <!-- item 1 contents start -->
             <div class="flex justify-between border-b-2 w-2/3 mx-auto mb-5">
@@ -1620,219 +1533,6 @@
             </div>
           </div>
           <!-- item 1 end -->
-        </div>
-      </section>
-
-      <section class="mt-5">
-        <div
-          class="block rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
-          <h5 class="mb-2 text-2xl font-bold text-center leading-tight">Introducing someone: and this is...</h5>
-          <h6 class="text-center mb-5">Listen to people introducing each other by clicking on the audio icons. The key language is summarised in the table.</h6>
-          <!-- card responsive wrapper -->
-          <div class="bg-white dark:bg-neutral-700 flex flex-col lg:flex-row justify-between">
-            <!-- 1st card -->
-            <div class="mb-6 lg:mb-0 w-full lg:w-1/2">
-              <div
-                class="block h-full rounded-lg bg-white">
-                <div class="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center dark:border-opacity-10">
-                  <h3 class="mb-2 text-3xl">
-                    <strong>
-                      Introduction</strong>
-                  </h3>
-                </div>
-                <div class="p-6">
-                  <ol class="list-inside">
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>Te presento a mi amiga Laura.	
-                    </li>
-                    <li class="mb-4 flex border-b-2 border-neutral-100 border-opacity-100">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>This is my friend Laura.
-                    </li>
-                    <li class="mb-4 flex ">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>Hola, Rosario. Este es mi amigo Federico.	
-                    </li>
-                    <li class="mb-4 flex border-b-2 border-neutral-100 border-opacity-100">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>Hello, Rosario. This is my friend Federico.
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>Hola Lucas. Esta es mi amiga Claudia.	
-                    </li>
-                    <li class="mb-4 flex border-b-2 border-neutral-100 border-opacity-100">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>Hello, Lucas. She's my friend Claudia.	
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>Te presento al señor y la señora Rivera.	
-                    </li>
-                    <li class="mb-4 flex border-b-2 border-neutral-100 border-opacity-100">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>These are Mr and Mrs Rossi.	
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>Le presento a la señora Fernández.	
-                    </li>
-                    <li class="mb-4 flex border-b-2 border-neutral-100 border-opacity-100">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>May I introduce Mrs Fernández.	
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>Mamá, papá, les presento a los senores Fernandez.	
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      
-                      </svg>Mum, dad, may I introduce Mr and Mrs Ferri.	
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-            <!-- 2nd card -->
-            <div class="mb-6 lg:mb-0 w-full lg:w-1/2">
-              <div
-                class="block h-full rounded-lg">
-                <div class="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center dark:border-opacity-10">
-                  <h3 class="mb-2 text-3xl">
-                    <strong>
-                      Response</strong>
-                  </h3>
-                </div>
-                <div class="p-6">
-                  <ol class="list-inside">
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      </svg>Hola, Laura. ¡Un placer conocerte!
-                    </li>
-                    <li class="mb-4 flex border-b-2 border-neutral-100 border-opacity-100">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      </svg>Hello, Laura. It is a pleasure to meet you!
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      </svg>¡Hola! Mucho gusto.
-                    </li>
-                    <li class="mb-4 flex border-b-2 border-neutral-100 border-opacity-100">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      </svg>Hello! Nice to meet you.
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      </svg>Hola, es un placer conocerte. Soy Lucas.
-                    </li>
-                    <li class="mb-4 flex border-b-2 border-neutral-100 border-opacity-100">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      </svg>Hello! I am Luca. Nice to meet you.
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      </svg>¡Mucho gusto!
-                    </li>
-                    <li class="mb-4 flex border-b-2 border-neutral-100 border-opacity-100">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      </svg>Nice to meet you!
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      </svg>¡Un placer conocerla!
-                    </li>
-                    <li class="mb-4 flex border-b-2 border-neutral-100 border-opacity-100">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      </svg>Pleased to meet you!
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      </svg>¡Gusto en conocerlos!
-                    </li>
-                    <li class="mb-4 flex">
-                      <svg class="w-[20px] h-[20px] mr-2 fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                      </svg>Pleased to meet you both!
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-            
-
-          </div>
-
         </div>
       </section>
 

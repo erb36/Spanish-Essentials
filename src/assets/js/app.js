@@ -4,25 +4,28 @@ document.addEventListener('DOMContentLoaded', function () {
   console.log('app.js');
 
 
-  (function () {
+  (function (elementId) {
     // Immediately Invoked Function Expression (IIFE)
     // This function runs immediately after it's defined
 
     // Target the div element with id 'aac1'
-    var divElement = document.getElementById('acc-con-1-item-2');
+    var divElement = document.getElementById(elementId);
 
     if (divElement) {
       // Add your logic here to work with the targeted divElement
-      console.log('Found div with id "aac1":', divElement);
+      console.log('Found div with id "' + elementId + '":', divElement);
 
       // Example: Change the background color of the div
       divElement.style.backgroundColor = 'lightblue';
     } else {
-      console.log('Div with id "aac1" not found.');
+      console.log('Div with id "' + elementId + '" not found.');
     }
 
-  })();
+  })('acc-con-1-item-2');
+
 
 
 
 });
+
+

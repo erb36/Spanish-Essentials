@@ -3,6 +3,35 @@
 @tailwind utilities;
 
 /* Define a custom CSS class using @apply */
+
+.main-container {
+  @apply w-full md:w-3/4 mx-auto bg-spanishYellowLight mt-5 px-5 py-1 rounded-md;
+}
+
+.intro {
+  @apply bg-spanishYellow mx-auto m-5 rounded-lg shadow-lg;
+}
+
+.intro-contents {
+  @apply flex flex-col-reverse xl:flex-row;
+}
+
+.intro-h1 {
+  @apply font-bold text-4xl mt-5 mx-auto;
+}
+
+.intro-text-div {
+  @apply flex flex-col w-2/3;
+}
+
+.intro-text {
+  @apply mx-auto w-2/3 mb-10;
+}
+
+.intro-img {
+  @apply lg:shrink-0 lg:grow-0 self-center m-5;
+}
+
 .accordion-item-button {
   @apply relative flex w-full items-center rounded-t-lg border-0 bg-white px-5 py-4 text-left text-xl text-neutral-800 transition hover:bg-slate-100 hover:[&:not([data-twe-collapse-collapsed])]:bg-slate-100  [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10;
 }
@@ -24,10 +53,42 @@
   @apply flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer;
 }
 
-/* .toggle-english {
-  @apply block w-full rounded bg-blue-500 text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:bg-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-blue-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:bg-blue-700 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-md font-medium leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0;
-} */
+.toggle-english {
+  @apply block w-full rounded bg-blue-500 text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:bg-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-blue-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:bg-blue-700 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-lg font-medium leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0;
+}
 
 .english {
-  @apply text-md font-normal block text-slate-500;
+  @apply font-normal block text-slate-500;
+}
+
+.spanish {
+  @apply text-2xl font-bold text-center;
+}
+
+.instructions {
+  @apply ml-2 mb-2 pl-2 border-l-2 border-slate-500;
+}
+
+.accordion-title {
+  @apply text-2xl font-bold;
+}
+
+.info-icon {
+  @apply w-[20px] h-[20px] fill-[#8e8e8e] inline;
+}
+
+.play-icon {
+  @apply w-[50px] h-[50px] fill-[#8e8e8e];
+}
+
+.avatar {
+  @apply w-16 rounded-full;
+}
+
+.eye-icon {
+  @apply inline mx-1 pb-[2px] w-8 h-8;
+}
+
+.eye-slash-icon {
+  @apply inline ml-1 pb-[2px] w-8 h-8;
 }

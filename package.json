@@ -9,8 +9,9 @@
     "copy-html": "cp ./src/index.html ./dist/index.html && sed -i '' 's#../dist/assets/css/main.css#assets/css/main.min.css#' ./dist/index.html",
     "copy-img": "cp -R ./src/assets/img/. ./dist/assets/img/",
     "copy-js": "cp -R ./src/assets/js/. ./dist/assets/js/",
+    "copy-media": "cp -R ./src/assets/media/. ./dist/assets/media/",
     "minify-js": "uglifyjs ./dist/assets/js/app.js -o ./dist/assets/js/app.js",
-    "build": "npm run build-css && npm run copy-html && npm run copy-img && npm run copy-js && npm run minify-js"
+    "build": "npm run build-css && npm run copy-html && npm run copy-img && npm run copy-js && npm run minify-js && npm run copy-media"
   },
   "keywords": [],
   "author": "",

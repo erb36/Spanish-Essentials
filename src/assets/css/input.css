@@ -58,7 +58,7 @@
 }
 
 .english {
-  @apply font-normal block text-slate-500;
+  @apply font-normal text-slate-500;
 }
 
 .spanish {

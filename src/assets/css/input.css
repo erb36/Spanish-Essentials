@@ -78,7 +78,7 @@
 }
 
 .play-icon {
-  @apply w-[50px] h-[50px] fill-[#8e8e8e];
+  @apply w-[60px] h-[60px] fill-[#8e8e8e]  my-auto;
 }
 
 .avatar {

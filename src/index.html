@@ -136,204 +136,192 @@
           </div>
         </div>
       </section>
-      <!-- accordion 1 -->
-      <section class="border border-black">
-        <div>
-          <h2 class="text-2xl font-bold">Greetings: saying hello and goodbye (part i)</h2>
-            <p class="ml-2 mb-2 pl-2 border-l-2 border-slate-500"><svg class="w-[20px] h-[20px] fill-[#8e8e8e] inline" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
 
-              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-              <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path>
-            
-            </svg>
-              The tables below show the Spanish ways to say hello and goodbye.
-              For practice, you can hide the Spanish and English columns and
-              listen to audio prompts.</p>
-          </div>
-        <!-- accordion container -->
-        <div id="accordion-container-1">
-          <div
-            id="acc-con-1-item-1"
-            class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
-            
-          >
-            <h3 class="mb-0" id="acc-con-1-item-1-heading">
-              <button
-                class="group accordion-item-button"
-                type="button"
-                data-twe-collapse-init
-                data-twe-collapse-collapsed
-                data-twe-target="#acc-con-1-item-1-collapse"
-                aria-expanded="false"
-                aria-controls="acc-con-1-item-1-collapse"
-              >
-                Hello
-                <span
-                  class="accordion-chevron"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </h3><!-- end of #acc-con-1-item-1-heading -->
-            <div
-              id="acc-con-1-item-1-collapse"
-              class="!visible hidden"
-              data-twe-collapse-item
-              aria-labelledby="acc-con-1-item-1-heading"
-            >
+
+    <!-- accordion 1 -->
+    <section class="border border-black"> <!-- temp class to identify area-->
+      <div>
+        <h2 class="text-2xl font-bold">Greetings: saying hello and goodbye (part i)</h2>
+        <p class="ml-2 mb-2 pl-2 border-l-2 border-slate-500">
+          <svg class="w-[20px] h-[20px] fill-[#8e8e8e] inline" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z">
+            </path>
+          </svg>
+          The tables below show the Spanish ways to say hello and goodbye.
+          For practice, you can hide the Spanish and English columns and
+          listen to audio prompts.
+        </p>
+      </div>
+      <!-- accordion container -->
+      <div id="accordion-container-1">
+        <div id="accordion-1"
+          class="accordion-panel">
+          <h3 class="mb-0" id="accordion-1-heading">
+            <button class="group accordion-item-button" type="button" data-twe-collapse-init data-twe-collapse-collapsed
+              data-twe-target="#accordion-1-collapse" aria-expanded="false" aria-controls="accordion-1-collapse">
+              Hello
+              <span class="accordion-chevron">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+            </button>
+          </h3><!-- end of #accordion-1-heading -->
+          <div id="accordion-1-collapse" class="!visible hidden" data-twe-collapse-item
+            aria-labelledby="accordion-1-heading">
             <!-- accordion 1 hello contents -->
-              <div class="px-5 py-4 border border-black"
-              id="aac1">
-                <!-- contents item1 -->
-                <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
-                  <!-- woman avatar -->
-                  <div>
-                    <img
-                    src="assets/img/Firefly_silhouette_of_a_spanish_women.jpg"
-                    class="w-16 rounded-full"
+            <div id="accordion-item-container" class="px-5 py-4 border border-black">
+              <!-- contents item1 -->
+              <div
+                class="accordion-item">
+                <!-- woman avatar -->
+                <div>
+                  <img src="assets/img/Firefly_silhouette_of_a_spanish_women.jpg" class="w-16 rounded-full"
                     alt="Avatar">
-                  </div>
-                  <!-- end of woman avatar -->
-                  <div>
-                  <p class="text-2xl font-bold text-center">¡Hola!<small class="english text-md font-normal block text-slate-500">Hello (formal and informal)</small></p>
-                  </div>
-                  <div>
-                    <svg class="w-[50px] h-[50px] fill-[#8e8e8e]" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-
-                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                      <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"></path>
-                    
-                    </svg>
-                  </div>
                 </div>
-                <!-- contents item1 end -->
-                <!-- contents item2 -->
-                <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
-                  <!-- man avatar -->
-                  <div>
-                    <img
-                    src="assets/img/Firefly_silhouette_of_a_spanish_man.jpg"
-                    class="w-16 rounded-full"
+                <!-- end of woman avatar -->
+                <div>
+                  <p class="text-2xl font-bold text-center">¡Hola!<small
+                      class="english text-md font-normal block text-slate-500">Hello (formal and
+                      informal)</small></p>
+                </div>
+                <div>
+                  <svg class="w-[50px] h-[50px] fill-[#8e8e8e]" viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <!-- contents item1 end -->
+
+              <!-- contents item2 -->
+              <div
+                class="accordion-item">
+                <!-- man avatar -->
+                <div>
+                  <img src="assets/img/Firefly_silhouette_of_a_spanish_man.jpg" class="w-16 rounded-full" alt="Avatar">
+                </div>
+                <!-- end of man avatar -->
+                <div>
+                  <p class="text-2xl font-bold text-center">Buenos dias
+                    <small class="english text-md font-normal block text-slate-500">Good morning
+                    </small>
+                  </p>
+                </div>
+                <div>
+                  <svg class="w-[50px] h-[50px] fill-[#8e8e8e]" viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg">
+
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z">
+                    </path>
+
+                  </svg>
+                </div>
+              </div>
+              <!-- contents item2 end -->
+
+              <!-- contents item3 -->
+              <div
+                class="accordion-item">
+                <!-- woman avatar -->
+                <div>
+                  <img src="assets/img/Firefly_silhouette_of_a_spanish_women.jpg" class="w-16 rounded-full"
                     alt="Avatar">
-                  </div>
-                  <!-- end of man avatar -->
-                  <div>
-                  <p class="text-2xl font-bold text-center">Buenos dias<small class="english text-md font-normal block text-slate-500">Good morning</small></p>
-                  </div>
-                  <div>
-                  <svg class="w-[50px] h-[50px] fill-[#8e8e8e]" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-
-                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                      <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"></path>
-                    
-                    </svg>
-                  </div>
                 </div>
-                <!-- contents item2 end -->
-                <!-- contents item3 -->
-                <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
-                  <!-- woman avatar -->
-                  <div>
-                    <img
-                    src="assets/img/Firefly_silhouette_of_a_spanish_women.jpg"
-                    class="w-16 rounded-full"
+                <!-- end of woman avatar -->
+                <div>
+                  <p class="text-2xl font-bold text-center">Buenas tardes<small
+                      class="english text-md font-normal block text-slate-500">Good afternoon</small></p>
+                </div>
+                <div>
+                  <svg class="w-[50px] h-[50px] fill-[#8e8e8e]" viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg">
+
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z">
+                    </path>
+
+                  </svg>
+                </div>
+              </div>
+              <!-- item3 end -->
+              <!-- item4 -->
+              <div
+                class="accordion-item">
+                <!-- man avatar -->
+                <div>
+                  <img src="assets/img/Firefly_silhouette_of_a_spanish_man.jpg" class="w-16 rounded-full" alt="Avatar">
+                </div>
+                <!-- end of man avatar -->
+                <div>
+                  <p class="text-2xl font-bold text-center">Buenas noches
+                    <small class="english text-md font-normal block text-slate-500">Good evening/Good nigh
+                    </small>
+                  </p>
+                </div>
+                <div>
+                  <svg class="w-[50px] h-[50px] fill-[#8e8e8e]" viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg">
+
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z">
+                    </path>
+
+                  </svg>
+                </div>
+              </div>
+              <!-- item4 end -->
+              <!-- item5 -->
+              <div
+                class="accordion-item">
+                <!-- woman avatar -->
+                <div>
+                  <img src="assets/img/Firefly_silhouette_of_a_spanish_women.jpg" class="w-16 rounded-full"
                     alt="Avatar">
-                  </div>
-                  <!-- end of woman avatar -->
-                  <div>
-                  <p class="text-2xl font-bold text-center">Buenas tardes<small class="english text-md font-normal block text-slate-500">Good afternoon</small></p>
-                  </div>
-                  <div>
-                  <svg class="w-[50px] h-[50px] fill-[#8e8e8e]" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-
-                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                      <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"></path>
-                    
-                    </svg>
-                  </div>
                 </div>
-                <!-- item3 end -->
-                <!-- item4 -->
-                <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
-                  <!-- man avatar -->
-                  <div>
-                    <img
-                    src="assets/img/Firefly_silhouette_of_a_spanish_man.jpg"
-                    class="w-16 rounded-full"
-                    alt="Avatar">
-                  </div>
-                  <!-- end of man avatar -->
-                  <div>
-                  <p class="text-2xl font-bold text-center">Buenas noches<small class="english text-md font-normal block text-slate-500">Good evening/Good nigh</small></p>
-                  </div>
-                  <div>
-                  <svg class="w-[50px] h-[50px] fill-[#8e8e8e]" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-
-                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                      <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"></path>
-                    
-                    </svg>
-                  </div>
+                <!-- end of woman avatar -->
+                <div>
+                  <p class="text-2xl font-bold text-center">¡Qué tal!<small
+                      class="english text-md font-normal block text-slate-500">What's new</small></p>
                 </div>
-                <!-- item4 end -->
-                <!-- item5 -->
-                <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
-                  <!-- woman avatar -->
-                  <div>
-                    <img
-                    src="assets/img/Firefly_silhouette_of_a_spanish_women.jpg"
-                    class="w-16 rounded-full"
-                    alt="Avatar">
-                  </div>
-                  <!-- end of woman avatar -->
-                  <div>
-                  <p class="text-2xl font-bold text-center">¡Qué tal!<small class="english text-md font-normal block text-slate-500">What's new</small></p>
-                  </div>
-                  <div>
-                  <svg class="w-[50px] h-[50px] fill-[#8e8e8e]" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <div>
+                  <svg class="w-[50px] h-[50px] fill-[#8e8e8e]" viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg">
 
-                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                      <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"></path>
-                    
-                    </svg>
-                  </div>
-                </div>
-                <!-- item5 end -->
-                <!-- show hide english start -->
-                <div class="m-5">
-                  <button type="button" 
-                          data-twe-ripple-init
-                          data-twe-ripple-color="light" 
-                          class="block w-full rounded bg-blue-500 text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:bg-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-blue-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:bg-blue-700 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-md font-medium uppercase leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 576 512"
-                      fill="currentColor"
-                      class="inline mx-1 pb-[2px] w-8 h-8"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>Hide English
-                    </button>
-                </div>
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z">
+                    </path>
 
-                <!-- eye slash -->
-                    <!-- <svg
+                  </svg>
+                </div>
+              </div>
+              <!-- item5 end -->
+              <!-- show hide english start -->
+              <div class="button-container m-5">
+                <button type="button" data-twe-ripple-init data-twe-ripple-color="light"
+                  class="toggle-english block w-full rounded bg-blue-500 text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:bg-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-blue-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:bg-blue-700 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-md font-medium leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor"
+                    class="inline mx-1 pb-[2px] w-8 h-8">
+                    <path fill-rule="evenodd"
+                      d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"
+                      clip-rule="evenodd" />
+                  </svg>Show Translation
+                </button>
+              </div>
+              <!-- show hide english end -->
+
+              <!-- eye slash -->
+              <!-- <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 576 512"
                       fill="currentColor"
@@ -346,29 +334,32 @@
                       />
                     </svg> -->
 
-                <!-- show hide english end -->
-                
-              </div>
+              <!-- show hide english end -->
+
             </div>
-          </div> <!-- end of #acc-con-1-item-1 -->
+
+
+
+          </div>
+        </div> <!-- end of #accordion-1 -->
 
 
 
 
           
           <div
-            id="acc-con-1-item-2"
-            class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
+            id="accordion-2"
+            class="accordion-panel-2"
           >
-            <h3 class="mb-0" id="acc-con-1-item-2-heading">
+            <h3 class="mb-0" id="accordion-2-heading">
               <button
                 class="group accordion-item-button"
                 type="button"
                 data-twe-collapse-init
                 data-twe-collapse-collapsed
-                data-twe-target="#acc-con-1-item-2-collapse"
+                data-twe-target="#accordion-2-collapse"
                 aria-expanded="false"
-                aria-controls="acc-con-1-item-2-collapse"
+                aria-controls="accordion-2-collapse"
               >
                 Goodbye
                 <span
@@ -391,16 +382,16 @@
               </button>
             </h3>
             <div
-              id="acc-con-1-item-2-collapse"
+              id="accordion-2-collapse"
               class="!visible hidden"
               data-twe-collapse-item
-              aria-labelledby="acc-con-1-item-2-heading"
+              aria-labelledby="accordion-2-heading"
             >
             <!-- accordion 1 goodbye contents -->
             <div class="px-5 py-4"
             id="aac2">
               <!-- item1 -->
-              <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
+              <div class="accordion-item">
                 <!-- woman avatar -->
                 <div>
                   <img
@@ -423,7 +414,7 @@
               </div>
               <!-- item1 end -->
               <!-- item2 -->
-              <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
+              <div class="accordion-item">
                 <!-- man avatar -->
                 <div>
                   <img
@@ -446,7 +437,7 @@
               </div>
               <!-- item2 end -->
               <!-- item3 -->
-              <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
+              <div class="accordion-item">
                 <!-- woman avatar -->
                 <div>
                   <img
@@ -469,7 +460,7 @@
               </div>
               <!-- item3 end -->
               <!-- item4 -->
-              <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
+              <div class="accordion-item">
                 <!-- man avatar -->
                 <div>
                   <img
@@ -492,7 +483,7 @@
               </div>
               <!-- item4 end -->
               <!-- item5 -->
-              <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
+              <div class="accordion-item">
                 <!-- woman avatar -->
                 <div>
                   <img
@@ -515,7 +506,7 @@
               </div>
               <!-- item5 end -->
               <!-- item6 -->
-              <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
+              <div class="accordion-item">
                 <!-- man avatar -->
                 <div>
                   <img
@@ -538,7 +529,7 @@
               </div>
               <!-- item6 end -->
               <!-- item7 -->
-              <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
+              <div class="accordion-item">
                 <!-- woman avatar -->
                 <div>
                   <img
@@ -561,7 +552,7 @@
               </div>
               <!-- item7 end -->
               <!-- item8 -->
-              <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
+              <div class="accordion-item">
                 <!-- man avatar -->
                 <div>
                   <img
@@ -584,7 +575,7 @@
               </div>
               <!-- item8 end -->
               <!-- item9 -->
-              <div class="flex justify-between border-b-2 mx-5 mb-2 pb-2 hover:bg-slate-100 hover:shadow-lg hover:cursor-pointer">
+              <div class="accordion-item">
                 <!-- woman avatar -->
                 <div>
                   <img
@@ -608,7 +599,7 @@
               <!-- item9 end -->
             </div>
             </div>
-          </div><!-- end of #acc-con-1-item-2 -->
+          </div><!-- end of #accordion-2 -->
         </div> <!-- end of #accordion-container-1 -->
       </section>
 

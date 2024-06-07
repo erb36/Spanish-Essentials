@@ -10,16 +10,16 @@
     <!-- Header and navigation container -->
     <header>
       <nav
-        class="fixed top-0 z-10 flex w-full flex-nowrap items-center justify-between bg-spanishYellowLight py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
+        class="nav-container"
         data-twe-navbar-ref
       >
-        <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <div class="nav-flexbox">
           <div class="ms-2">
-            <a class="text-xl text-black dark:text-white" href="#">Navbar</a>
+            <a class="text-xl text-black dark:text-white" href="#">Spanish Essentials</a>
           </div>
           <!-- Hamburger button for mobile view -->
           <button
-            class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+            class="hamburger-button"
             type="button"
             data-twe-collapse-init
             data-twe-target="#navbarSupportedContent2"
@@ -29,7 +29,7 @@
           >
             <!-- Hamburger icon -->
             <span
-              class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200"
+              class="hamburger-icon"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -47,62 +47,88 @@
 
           <!-- Collapsible navbar container -->
           <div
-            class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+            class="navbar-collapse"
             id="navbarSupportedContent2"
             data-twe-collapse-item
           >
             <!-- Left links -->
             <ul
-              class="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row"
+              class="nav-ul"
               data-twe-navbar-nav-ref
             >
-              <!-- Home link -->
+              <!-- intro link -->
               <li
-                class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
+                class="nav-li-big"
                 data-twe-nav-item-ref
               >
                 <a
-                  class="text-black dark:text-white lg:px-2"
+                  class="nav-anchor-type-1"
                   aria-current="page"
                   href="#intro"
                   data-twe-nav-link-ref
                   >Intro</a
                 >
               </li>
-              <!-- Features link -->
+              <!-- Greetings link -->
+              <li
+                class="nav-li-small"
+                data-twe-nav-item-ref
+              >
+                <a
+                  class="nav-anchor-type-2"
+                  href="#"
+                  data-twe-nav-link-ref
+                  >Greetings</a
+                >
+              </li>
+              <!-- Adressing People link -->
               <li
                 class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
                 data-twe-nav-item-ref
               >
                 <a
-                  class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  class="nav-anchor-type-2"
                   href="#"
                   data-twe-nav-link-ref
-                  >Features</a
+                  >Adressing People</a
                 >
               </li>
-              <!-- Pricing link -->
+              <!-- Introducing Someone link -->
               <li
                 class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
                 data-twe-nav-item-ref
               >
                 <a
-                  class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  class="nav-anchor-type-2"
                   href="#"
                   data-twe-nav-link-ref
-                  >Pricing</a
+                  >Introducing Someone</a
                 >
               </li>
-              <!-- Disabled link -->
+              <!-- Ungendered Spanish link -->
               <li
                 class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
-                data-twe-nav-link-ref
+                data-twe-nav-item-ref
               >
                 <a
-                  class="pointer-events-none text-black/30 dark:text-white/30 lg:px-2"
-                  >Disabled</a
+                  class="nav-anchor-type-2"
+                  href="#"
+                  data-twe-nav-link-ref
+                  >Ungendered Spanish</a
                 >
-              </li>
+              </li>      
+              <!-- Excercises link -->
+              <li
+                class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
+                data-twe-nav-item-ref
+              >
+                <a
+                  class="nav-anchor-type-2"
+                  href="#"
+                  data-twe-nav-link-ref
+                  >Excercises</a
+                >
+              </li>         
             </ul>
           </div>
         </div>
@@ -124,12 +150,12 @@
         <div class="intro-contents">
           <div class="intro-text-div">
             <h1 class="intro-h1">First Contact</h1>
-            <p class="text-2xl intro-text">
+            <p class="intro-text">
               Here you can see at a glance the Spanish key language related to
               first contact: greetings, addressing people and introducing
               someone.
             </p>
-            <p class="text-1xl intro-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempora nisi eveniet voluptates asperiores fugiat delectus sunt laudantium assumenda quam culpa facere veniam magnam ducimus veritatis, quaerat exercitationem. Sed odit reprehenderit, temporibus eius aut natus laudantium qui quam architecto delectus.</p>
+            <p class="intro-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempora nisi eveniet voluptates asperiores fugiat delectus sunt laudantium assumenda quam culpa facere veniam magnam ducimus veritatis, quaerat exercitationem. Sed odit reprehenderit, temporibus eius aut natus laudantium qui quam architecto delectus.</p>
           </div>
           <div class="intro-img">
             <img src="/src/assets/img/First_contact.png" alt="image of a friendly woman holding out her hand to greet someone">

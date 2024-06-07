@@ -4,6 +4,26 @@
 
 /* Define a custom CSS class using @apply */
 
+.nav-container {
+  @apply fixed top-0 z-10 flex w-full flex-nowrap items-center justify-between bg-spanishYellowLight py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4;
+}
+
+.nav-flexbox {
+  @apply flex w-full flex-wrap items-center justify-between px-3;
+}
+
+.hamburger-button {
+  @apply block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden;
+}
+
+.hamburger-icon {
+  @apply [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200;
+}
+
+.navbar-collapse {
+  @apply !visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto;
+}
+
 .main-container {
   @apply w-full md:w-3/4 mx-auto bg-spanishYellowLight mt-5 px-5 py-1 rounded-md;
 }
@@ -25,7 +45,27 @@
 }
 
 .intro-text {
-  @apply mx-auto w-2/3 mb-10;
+  @apply text-2xl mx-auto w-2/3 mb-10;
+}
+
+.nav-ul {
+  @apply list-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row;
+}
+
+.nav-li-big {
+  @apply my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2;
+}
+
+.nav-li-small {
+  @apply mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0;
+}
+
+.nav-anchor-type-1 {
+  @apply text-black dark:text-white lg:px-2;
+}
+
+.nav-anchor-type-2 {
+  @apply p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2;
 }
 
 .intro-img {

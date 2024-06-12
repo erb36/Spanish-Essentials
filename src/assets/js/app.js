@@ -75,8 +75,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   })('accordion-container-1', 'assets/media', 'accordion-1-1');
 
-
-
 });
 
 

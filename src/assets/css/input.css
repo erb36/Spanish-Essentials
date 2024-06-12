@@ -4,6 +4,8 @@
 
 /* Define a custom CSS class using @apply */
 
+
+/* nav */
 .nav-container {
   @apply fixed top-0 z-10 flex w-full flex-nowrap items-center justify-between bg-spanishYellowLight py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4;
 }
@@ -67,6 +69,8 @@
 .nav-anchor-type-2 {
   @apply p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2;
 }
+/* end of nav */
+
 
 .intro-img {
   @apply lg:shrink-0 lg:grow-0 self-center m-5;
@@ -131,4 +135,20 @@
 
 .eye-slash-icon {
   @apply inline ml-1 pb-[2px] w-8 h-8;
+}
+
+.know-how {
+  @apply flex flex-col bg-spanishYellow mx-auto my-10 w-2/3 rounded-lg p-3 shadow-xl;
+}
+
+.footer-image {
+  @apply flex justify-end mr-3;
+}
+
+.footer-container {
+  @apply container flex flex-col justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0;
+}
+
+.footer-links {
+  @apply flex flex-col-reverse items-center justify-between space-y-12 md:flex-row md:space-y-0 md:items-start;
 }

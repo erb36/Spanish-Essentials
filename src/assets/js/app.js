@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const toggleEnglishButton = document.querySelector('.toggle-english');
     toggleEnglishButton.addEventListener('click', toggleEnglish);
 
-  })('accordion-container-1', 'assets/media', 'accordion-1-1');
+  })('accordion-container-1', 'assets/media', 'accordion-1');
 
 });
 

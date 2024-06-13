@@ -152,3 +152,11 @@
 .footer-links {
   @apply flex flex-col-reverse items-center justify-between space-y-12 md:flex-row md:space-y-0 md:items-start;
 }
+
+.back-to-top {
+  @apply flex flex-row justify-end;
+}
+
+.up-icon {
+  @apply inline w-[15px] h-[15px] fill-[#8e8e8e];
+}

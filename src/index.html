@@ -1389,140 +1389,187 @@
 
 
 
+    <!-- Exercises -->
 
-
-    <section id="excercises">
+    <section id="excercises" class="border rounded flex flex-col">
           <h2 class="mx-auto font-bold text-2xl">Excercises</h2>
-          <p>Here are different types of exercises for practicing expressions of first contact.</p>
-          <div>
-            <h2>1. Fill in the table below by dragging greetings and goodbye expressions into the appropriate column marked by .</h2>
-          </div>
+          <p class="mx-auto">Here are different types of exercises for practicing expressions of first contact.</p>
 
-        <!-- gpt -->
-        <div class="p-4 max-w-3xl mx-auto bg-gray-100 border border-gray-300">
-          <div class="border-b border-gray-300 py-4 flex items-center justify-between">
-              <div class="flex flex-col">
-                  <p class="text-lg mb-2">Question 1: What is the capital of France?</p>
-                  <div class="flex gap-2">
-                      <button class="btn gray">Correct</button>
-                      <button class="btn gray">Incorrect</button>
+
+        <!-- Exercise 1 -->
+         <div id="exercise-greeting" class="flex flex-col w-full mx-auto p-6 bg-white rounded-lg shadow-lg mb-5 border-2">
+          <h2><strong>1. Greetings or Goodbyes.</strong>&nbsp;  Are the folowing expressions greetings or goodbyes?</h2>
+            <p>Consider the expressions below. Select whether they are greetings or goodbyes.</p>
+         
+            <div class="container mx-auto p-4">
+              <div class="bg-white shadow-md rounded-lg p-6">
+                <!-- Question 1 -->
+                <div class="mb-4 p-4 rounded-lg question">
+                  <p class="text-lg font-semibold">1. Is "Buen día" a Greeting or a Goodbye?</p>
+                  <div class="mt-2 flex items-center space-x-4 button-group">
+                    <button class="bg-green-500 text-white px-4 py-2 rounded" data-answer="correct">Greeting</button>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded" data-answer="incorrect">Goodbye</button>
+                    <!-- feedback -->
+                    <div class="ml-4 hidden items-center feedback">
+                      <div class="flex">
+                        <span class="mr-2 feedback-icon"></span>
+                        <span class="feedback-message"></span>
+                      </div>
+                    </div>
+                    <!-- feedback - end -->
                   </div>
-              </div>
-              <span class="feedback-icon text-2xl"></span>
-          </div>
-          <div class="border-b border-gray-300 py-4 flex items-center justify-between">
-              <div class="flex flex-col">
-                  <p class="text-lg mb-2">Question 2: What is the largest planet in our solar system?</p>
-                  <div class="flex gap-2">
-                      <button class="btn gray">Correct</button>
-                      <button class="btn gray">Incorrect</button>
+                </div>
+                <!-- Question 2 -->
+                <div class="mb-4 p-4 rounded-lg question">
+                  <p class="text-lg font-semibold">2. Is "Buenas tardes" a Greeting or a Goodbye?</p>
+                  <div class="mt-2 flex items-center space-x-4 button-group">
+                    <button class="bg-green-500 text-white px-4 py-2 rounded" data-answer="correct">Greeting</button>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded" data-answer="incorrect">Goodbye</button>
+                    <!-- feedback -->
+                    <div class="ml-4 hidden items-center feedback">
+                      <div class="flex">
+                        <span class="mr-2 feedback-icon"></span>
+                        <span class="feedback-message"></span>
+                      </div>
+                    </div>
+                    <!-- feedback - end -->
                   </div>
-              </div>
-              <span class="feedback-icon text-2xl"></span>
-          </div>
-          <div class="border-b border-gray-300 py-4 flex items-center justify-between">
-              <div class="flex flex-col">
-                  <p class="text-lg mb-2">Question 3: Who wrote the play "Romeo and Juliet"?</p>
-                  <div class="flex gap-2">
-                      <button class="btn gray">Correct</button>
-                      <button class="btn gray">Incorrect</button>
+                </div>
+                <!-- Question 3 -->
+                <div class="mb-4 p-4 rounded-lg question">
+                  <p class="text-lg font-semibold">3. Is "Hola" a Greeting or a Goodbye?</p>
+                  <div class="mt-2 flex items-center space-x-4 button-group">
+                    <button class="bg-green-500 text-white px-4 py-2 rounded" data-answer="correct">Greeting</button>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded" data-answer="incorrect">Goodbye</button>
+                    <!-- feedback -->
+                    <div class="ml-4 hidden items-center feedback">
+                      <div class="flex">
+                        <span class="mr-2 feedback-icon"></span>
+                        <span class="feedback-message"></span>
+                      </div>
+                    </div>
+                    <!-- feedback - end -->
                   </div>
-              </div>
-              <span class="feedback-icon text-2xl"></span>
-          </div>
-          <div class="py-4 flex items-center justify-between">
-              <div class="flex flex-col">
-                  <p class="text-lg mb-2">Question 4: What is the boiling point of water?</p>
-                  <div class="flex gap-2">
-                      <button class="btn gray">Correct</button>
-                      <button class="btn gray">Incorrect</button>
+                </div>
+                <!-- Question 4 -->
+                <div class="mb-4 p-4 rounded-lg question">
+                  <p class="text-lg font-semibold">4. Is "Adiós" a Greeting or a Goodbye?</p>
+                  <div class="mt-2 flex items-center space-x-4 button-group">
+                    <button class="bg-green-500 text-white px-4 py-2 rounded" data-answer="incorrect">Greeting</button>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded" data-answer="correct">Goodbye</button>
+                    <!-- feedback -->
+                    <div class="ml-4 hidden items-center feedback">
+                      <div class="flex">
+                        <span class="mr-2 feedback-icon"></span>
+                        <span class="feedback-message"></span>
+                      </div>
+                    </div>
+                    <!-- feedback - end -->
                   </div>
-              </div>
-              <span class="feedback-icon text-2xl"></span>
-          </div>
-      </div>
-      
+                </div>
+                <!-- Question 5 -->
+                <div class="mb-4 p-4 rounded-lg question">
+                  <p class="text-lg font-semibold">5. Is "Nos vemos mañana" a Greeting or a Goodbye?</p>
+                  <div class="mt-2 flex items-center space-x-4 button-group">
+                    <button class="bg-green-500 text-white px-4 py-2 rounded" data-answer="incorrect">Greeting</button>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded" data-answer="correct">Goodbye</button>
+                    <!-- feedback -->
+                    <div class="ml-4 hidden items-center feedback">
+                      <div class="flex">
+                        <span class="mr-2 feedback-icon"></span>
+                        <span class="feedback-message"></span>
+                      </div>
+                    </div>
+                    <!-- feedback - end -->
+                  </div>
+                </div>
+                <!-- Question 6 -->
+                <div class="mb-4 p-4 rounded-lg question">
+                  <p class="text-lg font-semibold">6. Is "Buenas noches" a Greeting or a Goodbye?</p>
+                  <div class="mt-2 flex items-center space-x-4 button-group">
+                    <button class="bg-green-500 text-white px-4 py-2 rounded" data-answer="correct">Greeting</button>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded" data-answer="incorrect">Goodbye</button>
+                    <!-- feedback -->
+                    <div class="ml-4 hidden items-center feedback">
+                      <div class="flex">
+                        <span class="mr-2 feedback-icon"></span>
+                        <span class="feedback-message"></span>
+                      </div>
+                    </div>
+                    <!-- feedback - end -->
+                  </div>
+                </div>
+                <!-- Question 7 -->
+                <div class="mb-4 p-4 rounded-lg question">
+                  <p class="text-lg font-semibold">7. Is "Hasta el jueves" a Greeting or a Goodbye?</p>
+                  <div class="mt-2 flex items-center space-x-4 button-group">
+                    <button class="bg-green-500 text-white px-4 py-2 rounded" data-answer="incorrect">Greeting</button>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded" data-answer="correct">Goodbye</button>
+                    <!-- feedback -->
+                    <div class="ml-4 hidden items-center feedback">
+                      <div class="flex">
+                        <span class="mr-2 feedback-icon"></span>
+                        <span class="feedback-message"></span>
+                      </div>
+                    </div>
+                    <!-- feedback - end -->
+                  </div>
+                </div>
+                <!-- Question 8 -->
+                <div class="mb-4 p-4 rounded-lg question">
+                  <p class="text-lg font-semibold">8. Is "Hasta luego" a Greeting or a Goodbye?</p>
+                  <div class="mt-2 flex items-center space-x-4 button-group">
+                    <button class="bg-green-500 text-white px-4 py-2 rounded" data-answer="incorrect">Greeting</button>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded" data-answer="correct">Goodbye</button>
+                    <!-- feedback -->
+                    <div class="ml-4 hidden items-center feedback">
+                      <div class="flex">
+                        <span class="mr-2 feedback-icon"></span>
+                        <span class="feedback-message"></span>
+                      </div>
+                    </div>
+                    <!-- feedback - end -->
+                  </div>
+                </div>
+                <!-- Question 9 -->
+                <div class="mb-4 p-4 rounded-lg question">
+                  <p class="text-lg font-semibold">9. Is "Hasta pronto, Adiós" a Greeting or a Goodbye?</p>
+                  <div class="mt-2 flex items-center space-x-4 button-group">
+                    <button class="bg-green-500 text-white px-4 py-2 rounded" data-answer="incorrect">Greeting</button>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded" data-answer="correct">Goodbye</button>
+                    <!-- feedback -->
+                    <div class="ml-4 hidden items-center feedback">
+                      <div class="flex">
+                        <span class="mr-2 feedback-icon"></span>
+                        <span class="feedback-message"></span>
+                      </div>
+                    </div>
+                    <!-- feedback - end -->
+                  </div>
+                </div>
+                <!-- Question 10 -->
+                <div class="mb-4 p-4 rounded-lg question">
+                  <p class="text-lg font-semibold">10. Is "Adiós" a Greeting or a Goodbye?</p>
+                  <div class="mt-2 flex items-center space-x-4 button-group">
+                    <button class="bg-green-500 text-white px-4 py-2 rounded" data-answer="incorrect">Greeting</button>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded" data-answer="correct">Goodbye</button>
+                    <!-- feedback -->
+                    <div class="ml-4 hidden items-center feedback">
+                      <div class="flex">
+                        <span class="mr-2 feedback-icon"></span>
+                        <span class="feedback-message"></span>
+                      </div>
+                    </div>
+                    <!-- feedback - end -->
+                  </div>
+                </div>
           
-        <!-- gpt end -->
-        
-
-
-
-
-
-
-
-          <div>
-            <h2>2. Multiple choice I (formal and informal greetings and replies)</h2>
-            <p>Consider the greetings and replies below. Select whether they are formal or informal.</p>
-
-            
-
-            <form>
-              <p>1. Bien, gracias. ¿Y usted?</p>
-              <input type="radio" id="q1-formal" name="q1" value="formal">
-              <label for="q1-formal">Formal</label>
-              <input type="radio" id="q1-informal" name="q1" value="informal">
-              <label for="q1-informal">Informal</label>
-        
-              <p>2. ¿Hola, cómo estás?</p>
-              <input type="radio" id="q2-formal" name="q2" value="formal">
-              <label for="q2-formal">Formal</label>
-              <input type="radio" id="q2-informal" name="q2" value="informal">
-              <label for="q2-informal">Informal</label>
-        
-              <p>3. Hola Marta, ¿cómo estás?</p>
-              <input type="radio" id="q3-formal" name="q3" value="formal">
-              <label for="q3-formal">Formal</label>
-              <input type="radio" id="q3-informal" name="q3" value="informal">
-              <label for="q3-informal">Informal</label>
-        
-              <p>4. Buenas noches, Sr. Gómez, ¿cómo está?</p>
-              <input type="radio" id="q4-formal" name="q4" value="formal">
-              <label for="q4-formal">Formal</label>
-              <input type="radio" id="q4-informal" name="q4" value="informal">
-              <label for="q4-informal">Informal</label>
-        
-              <p>5. Señora, ¿cómo está?</p>
-              <input type="radio" id="q5-formal" name="q5" value="formal">
-              <label for="q5-formal">Formal</label>
-              <input type="radio" id="q5-informal" name="q5" value="informal">
-              <label for="q5-informal">Informal</label>
-        
-              <p>6. Todo bien, gracias ¿y usted?</p>
-              <input type="radio" id="q6-formal" name="q6" value="formal">
-              <label for="q6-formal">Formal</label>
-              <input type="radio" id="q6-informal" name="q6" value="informal">
-              <label for="q6-informal">Informal</label>
-        
-              <p>7. Así Así. Y tú ¿cómo estás?</p>
-              <input type="radio" id="q7-formal" name="q7" value="formal">
-              <label for="q7-formal">Formal</label>
-              <input type="radio" id="q7-informal" name="q7" value="informal">
-              <label for="q7-informal">Informal</label>
-            </form>
-          </div>
-
-
-
-
-          <div>
-            <h2>3. Match the halves (introducing someone)</h2>
-            <p>Complete each dialogue by dragging the appropriate reply. If your choice is correct you will be able to listen to the dialogue using the audio icon . You can check your answers and reset the exercise any time.</p>
-            <ol>
-              <li>Hola, Marcos. Esta es Charo.</li>
-              <li>Esta es mi hermana Sara.</li>
-              <li>Conozca a los señores Serrano.</li>
-              <li>Sr. Romero, ésta es mi madre.</li>
-              <li>Encantado de conocerles.</li>
-            </ol>
-            <ul>
-              <li>Hola Charo, muy contenta en conocerte.</li>
-              <li>¡Por fin te conozco! Soy Valentina.</li>
-              <li>Un placer conocerle.</li>
-              <li>Es un placer conocerte.</li>
-              <li>¡Hola, también es un placer para nosotros!</li>
-            </ul>
+                <!-- Reset Button -->
+                <div class="mt-6">
+                  <button class="bg-blue-500 text-white px-6 py-3 rounded w-full" onclick="resetQuiz()">Reset</button>
+                </div>
+              </div>
+            </div>         
           </div>
      </section>
 

@@ -140,3 +140,53 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 }); // end of DOMContentLoaded
+
+
+
+
+// gpt code section
+
+const correctAnswers = {
+  1: 'Greeting',
+  2: 'Greeting',
+  3: 'Greeting',
+  4: 'Goodbye',
+  5: 'Goodbye',
+  6: 'Greeting',
+  7: 'Goodbye',
+  8: 'Goodbye',
+  9: 'Goodbye',
+  10: 'Goodbye'
+};
+
+function checkAnswer(questionNumber, answer) {
+  const feedbackDiv = document.getElementById(`feedback-${questionNumber}`);
+  const iconSpan = document.getElementById(`icon-${questionNumber}`);
+  const messageSpan = document.getElementById(`message-${questionNumber}`);
+
+  if (answer === correctAnswers[questionNumber]) {
+    iconSpan.innerHTML = '✔️';
+    messageSpan.innerHTML = 'Correcto';
+    messageSpan.className = 'text-green-500 font-semibold';
+  } else {
+    iconSpan.innerHTML = '❌';
+    messageSpan.innerHTML = 'Incorrecto';
+    messageSpan.className = 'text-red-500 font-semibold';
+  }
+
+  feedbackDiv.classList.remove('hidden');
+}
+
+function resetQuiz() {
+  for (let i = 1; i <= 10; i++) {
+    document.getElementById(`feedback-${i}`).classList.add('hidden');
+  }
+}
+
+// 2nd gpt
+
+
+
+
+
+// gpt code section end

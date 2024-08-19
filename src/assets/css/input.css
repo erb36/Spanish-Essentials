@@ -27,7 +27,8 @@
 }
 
 .main-container {
-  @apply w-full md:w-3/4 mx-auto mt-5 px-5 py-1 rounded-md;
+  @apply w-full md:w-3/4 mx-auto mt-5 px-5 py-1 rounded-md border;
+  /* bg-spanishYellowLight */
 }
 
 .intro {
@@ -163,38 +164,8 @@
 
 /* gpt */
 /* styles.css */
-.btn {
-  @apply px-4 py-2 text-white font-semibold border-none cursor-pointer transition-colors;
-}
-
-.btn.gray {
-  @apply bg-gray-600;
-}
-
-.btn.correct.selected {
-  @apply bg-green-500;
-}
-
-.btn.incorrect.selected {
-  @apply bg-red-500;
-}
-
-.feedback-icon {
-  @apply invisible;
-}
-
-.feedback-icon.correct-icon::before {
-  content: "✔"; /* Check mark */
-  @apply text-green-500;
-}
-
-.feedback-icon.incorrect-icon::before {
-  content: "✖"; /* Cross mark */
-  @apply text-red-500;
-}
-
 .question:hover {
-  @apply bg-blue-100; /* Light blue background */
+  background-color: #f3f4f6; /* Light gray background on hover */
 }
 
 /* gpt end */

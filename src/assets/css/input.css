@@ -118,13 +118,44 @@
   @apply text-2xl font-bold;
 }
 
-.info-icon {
-  @apply w-[20px] h-[20px] fill-[#8e8e8e] inline;
-}
+  /* info-icon svg classes */
 
-.play-icon {
-  @apply w-[60px] h-[60px] fill-[#8e8e8e]  my-auto;
-}
+  .info-icon {
+    @apply w-[20px] h-[20px] fill-[#8e8e8e] inline;
+  }
+  
+  .info-icon-cls-1 {
+    fill-opacity: .1;
+    fill: #010101;
+  }
+  
+  .info-icon-cls-2 {
+    fill: #010101;
+  }
+  
+  .info-icon-cls-3 {
+    fill: #fff;
+  }
+  
+    /* play-icon svg classes */
+  
+  .play-icon {
+    @apply w-[60px] h-[60px];
+  }
+  
+  .play-icon-cls-1 {
+    fill-opacity: .1;
+  }
+  
+  .play-icon-cls-2 {
+    fill: #f39c14;
+  }
+  
+  .play-icon-cls-3 {
+    fill: #fff;
+  }
+  
+    /* svg classes end */
 
 .avatar {
   @apply w-16 rounded-full;

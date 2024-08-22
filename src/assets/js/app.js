@@ -311,6 +311,22 @@ document.addEventListener('DOMContentLoaded', function () {
       correct: 'Correct feedback for question 3',
       incorrect: 'Incorrect feedback for question 3',
     },
+    4: {
+      correct: 'Correct feedback for question 4',
+      incorrect: 'Incorrect feedback for question 4',
+    },
+    5: {
+      correct: 'Correct feedback for question 5',
+      incorrect: 'Incorrect feedback for question 5',
+    },
+    6: {
+      correct: 'Correct feedback for question 6',
+      incorrect: 'Incorrect feedback for question 6',
+    },
+    7: {
+      correct: 'Correct feedback for question 7',
+      incorrect: 'Incorrect feedback for question 7',
+    }
 
   }
 

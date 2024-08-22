@@ -89,7 +89,7 @@
   @apply rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark;
 }
 
-.accordion-panel-2 {
+.accordion-panel-square {
   @apply border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark;
 }
 
@@ -100,6 +100,10 @@
 
 .toggle-english {
   @apply block w-full rounded bg-blue-500 text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:bg-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-blue-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:bg-blue-700 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-lg font-medium leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0;
+}
+
+.reset-quiz-btn {
+  @apply block w-full bg-blue-500 text-neutral-50 px-6 py-3 rounded shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:bg-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)]
 }
 
 .english {
@@ -200,3 +204,39 @@
 }
 
 /* gpt end */
+
+.article-container {
+  @apply flex flex-col w-full;
+}
+
+.question-container {
+  @apply my-4 p-4 rounded-t-lg border-b-2 border-slate-200;
+}
+
+.exercise-instructions {
+  @apply mb-2 pb-2 border-b-2 border-orange-500
+}
+
+.question-text {
+  @apply text-lg font-semibold;
+}
+
+.questionFeedback-button-container {
+  @apply flex items-center justify-between;
+}
+
+.question-button-container {
+  @apply flex space-x-4;
+}
+
+.question-button {
+  @apply bg-slate-400 text-white px-4 py-2 rounded hover:bg-slate-600 transition duration-300;
+}
+
+.feedback-message {
+  @apply mt-2 w-full border border-gray-300 rounded-md p-2 text-sm;
+}
+
+.feedback-icon {
+  @apply ml-auto
+}

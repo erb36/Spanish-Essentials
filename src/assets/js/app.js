@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    const questions = questionContainer.querySelectorAll('.question');
+    const questions = questionContainer.querySelectorAll('.question-js');
 
     questions.forEach((question, index) => {
       console.log(`Setting up question ${index + 1}`);
@@ -164,8 +164,8 @@ document.addEventListener('DOMContentLoaded', function () {
           const isCorrect = button.getAttribute('data-answer') === 'correct';
 
           // Handle feedback display based on the answer
-          const feedbackIcon = question.querySelector('.feedback-icon');
-          const feedbackMessage = question.querySelector('.feedback-message');
+          const feedbackIcon = question.querySelector('.feedback-icon-js');
+          const feedbackMessage = question.querySelector('.feedback-message-js');
 
           // Access feedback using index + 1 to align with 1-based keys
           const feedbackIndex = index + 1;
@@ -212,8 +212,8 @@ document.addEventListener('DOMContentLoaded', function () {
       // Loop through each question and reset it
       questions.forEach((question) => {
         // Hide the feedback
-        const feedbackIcon = question.querySelector('.feedback-icon');
-        const feedbackMessage = question.querySelector('.feedback-message');
+        const feedbackIcon = question.querySelector('.feedback-icon-js');
+        const feedbackMessage = question.querySelector('.feedback-message-js');
         if (feedbackIcon) {
           feedbackIcon.innerHTML = ''; // Remove the SVG icons
           feedbackIcon.classList.add('hidden'); // Hide the icon

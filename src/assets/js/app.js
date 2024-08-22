@@ -325,9 +325,16 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     7: {
       correct: 'Correct feedback for question 7',
-      incorrect: 'Incorrect feedback for question 7',
+      incorrect: 'Incorrect feedback for question 7'
     }
 
+  };
+
+  const exercise_match_the_halves_feedback = {
+    1: {
+      correct: 'Correct feedback for question 1',
+      incorrect: 'Incorrect feedback for question 1'
+    }
   }
 
 

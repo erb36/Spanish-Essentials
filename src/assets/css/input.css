@@ -27,7 +27,7 @@
 }
 
 .main-container {
-  @apply w-full md:w-3/4 mx-auto mt-5 px-5 py-1 rounded-md border;
+  @apply w-full md:w-3/4 mx-auto mt-5 px-5 pt-1 pb-5 rounded-md border bg-slate-100;
   /* bg-spanishYellowLight */
 }
 
@@ -146,6 +146,10 @@
   .play-icon {
     @apply w-[60px] h-[60px];
   }
+
+  .feedback-play-icon {
+    @apply inline w-[30px] h-[30px];
+  }
   
   .play-icon-cls-1 {
     fill-opacity: .1;
@@ -239,4 +243,8 @@
 
 .feedback-icon {
   @apply ml-auto
+}
+
+.dropdown-container {
+  @apply flex flex-row
 }

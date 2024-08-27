@@ -222,7 +222,7 @@
 }
 
 .question-text {
-  @apply text-lg font-semibold;
+  @apply text-lg font-semibold text-nowrap;
 }
 
 .questionFeedback-button-container {
@@ -230,7 +230,7 @@
 }
 
 .question-button-container {
-  @apply flex space-x-4;
+  @apply flex space-x-4
 }
 
 .question-button {
@@ -242,9 +242,17 @@
 }
 
 .feedback-icon {
-  @apply ml-auto
+  @apply ml-auto;
+}
+
+.feedback-icon-dropdown {
+  @apply ps-5;
 }
 
 .dropdown-container {
-  @apply flex flex-row
+  @apply flex flex-col md:flex-row items-center space-x-4;
+}
+
+.dropdown-button {
+  @apply relative border rounded  w-full border-gray-300 bg-slate-400 text-white shadow-lg;
 }

@@ -1846,33 +1846,32 @@
                 <h2 class="exercise-instructions">Complete each dialogue by selecting the appropriate reply from the dropdown. If your choice is correct you will be able to listen to the dialogue using the audio icon . You can check your answers and reset the exercise any time.
                 </h2>
 
-
-                 <!-- Question 1 -->
-                 <div class="question-container question-js">
+                <!-- Question 1 -->
+                <div class="question-container question-js">
                   <!-- Buttons and Icon -->
+                  <p class="question-text">1. Hola, Marcos. Esta es Charo.</p> 
                   <div class="questionFeedback-button-container">
-                    <div class="question-button-container">
-                      <p class="question-text">1. Hola, Marcos. Esta es Charo</p>
-                        <div class="dropdown-container">
-                          <div class="relative border rounded border-gray-300 bg-slate-400 text-white shadow-lg">
-                            <label for="frm-whatever" class="sr-only">My field</label>
-                            <select class="appearance-none w-full py-1 px-2 bg-slate-400" name="whatever" id="frm-whatever">
-                              <option value="">Select the corect answer</option>
-                              <option value="correct">Hola Charo, muy contenta en conocerte.</option>
-                              <option value="incorrect">¡Por fin te conozco! Soy Valentina.</option>
-                              <option value="incorrect">Un placer conocerle.</option>
-                              <option value="incorrect">Es un placer conocerte.</option>
-                              <option value="incorrect">¡Hola, también es un placer para nosotros!</option>
-                            </select>
-                            <div class="pointer-events-none absolute right-0 top-0 bottom-0 flex items-center px-2 text-gray-700">
-                                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                                </svg>
-                            </div>
-                          </div>
-                        </div>
+                    <div class="dropdown-button">
+                      <label for="frm-whatever" class="sr-only">My field</label>
+                      <select class="appearance-none w-full py-1 px-2 bg-slate-400 whitespace-normal" name="whatever" id="frm-whatever">
+                        <option value="">Select the correct answer</option>
+                        <option value="correct">Hola Charo, muy contenta en conocerte.</option>
+                        <option value="incorrect">¡Por fin te conozco! Soy Valentina.</option>
+                        <option value="incorrect">Un placer conocerle.</option>
+                        <option value="incorrect">Es un placer conocerte.</option>
+                        <option value="incorrect">¡Hola, también es un placer para nosotros!</option>
+                      </select>
+                      <div class="pointer-events-none absolute right-0 top-0 bottom-0 flex items-center px-2 text-gray-700">
+                          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                          </svg>
+                      </div>
                     </div>
-                    <span class="feedback-icon-js feedback-icon"></span>
+                  
+                    <span class="feedback-icon-js feedback-icon-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" class="eye-slash-icon">
+                      <path fill-rule="evenodd"
+                        d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z" />
+                      </svg></span>
                   </div>
                   <!-- Feedback Message -->
                   <div class="feedback-message  feedback-message-js">

@@ -1840,7 +1840,7 @@
             <!-- accordion 1 contents -->
             <div id="accordion-9-item-container" class="p-5">
 
-              <article id="exercise_match_the_halves"
+              <article id="exercise-match-the-halves"
                 class="article-container">
                 <!-- <h2><strong>1. Greetings or Goodbyes.</strong>&nbsp; Are the following expressions greetings or goodbyes?</h2> -->
                 <h2 class="exercise-instructions">Complete each dialogue by selecting the appropriate reply from the dropdown. If your choice is correct you will be able to listen to the dialogue using the audio icon . You can check your answers and reset the exercise any time.
@@ -1854,7 +1854,7 @@
                     <div class="dropdown-button">
                       <label for="frm-whatever" class="sr-only">My field</label>
                       <select class="appearance-none w-full py-1 px-2 bg-slate-400 whitespace-normal" name="whatever" id="frm-whatever">
-                        <option value="">Select the correct answer</option>
+                        <option value="select">Select the correct answer</option>
                         <option value="correct">Hola Charo, muy contenta en conocerte.</option>
                         <option value="incorrect">¡Por fin te conozco! Soy Valentina.</option>
                         <option value="incorrect">Un placer conocerle.</option>
@@ -1868,13 +1868,40 @@
                       </div>
                     </div>
                   
-                    <span class="feedback-icon-js feedback-icon-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" class="eye-slash-icon">
-                      <path fill-rule="evenodd"
-                        d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z" />
-                      </svg></span>
+                    <span class="feedback-icon-js feedback-icon"></span>
                   </div>
                   <!-- Feedback Message -->
-                  <div class="feedback-message  feedback-message-js">
+                  <div class="feedback-message hidden feedback-message-js">
+                  </div>
+                  <!-- eof Feedback Message -->
+                </div>
+                <!-- eof Question 1 --> 
+                <!-- Question 2 -->
+                <div class="question-container question-js">
+                  <!-- Buttons and Icon -->
+                  <p class="question-text">2. Hola, Marcos. Esta es Charo.</p> 
+                  <div class="questionFeedback-button-container">
+                    <div class="dropdown-button">
+                      <label for="frm-whatever" class="sr-only">My field</label>
+                      <select class="appearance-none w-full py-1 px-2 bg-slate-400 whitespace-normal" name="whatever" id="frm-whatever">
+                        <option value="select">Select the correct answer</option>
+                        <option value="correct">Hola Charo, muy contenta en conocerte.</option>
+                        <option value="incorrect">¡Por fin te conozco! Soy Valentina.</option>
+                        <option value="incorrect">Un placer conocerle.</option>
+                        <option value="incorrect">Es un placer conocerte.</option>
+                        <option value="incorrect">¡Hola, también es un placer para nosotros!</option>
+                      </select>
+                      <div class="pointer-events-none absolute right-0 top-0 bottom-0 flex items-center px-2 text-gray-700">
+                          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                          </svg>
+                      </div>
+                    </div>
+                  
+                    <span class="feedback-icon-js feedback-icon"></span>
+                  </div>
+                  <!-- Feedback Message -->
+                  <div class="feedback-message hidden feedback-message-js">
                     <svg class="feedback-play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226 226.1">
                       <path class="play-icon-cls-2" d="M226.2,118.8c0-29.8-10.5-55.2-31.6-76.2-21-21-46.4-31.6-76.2-31.6-29.8,0-55.2,10.5-76.3,31.6-21,21.1-31.6,46.5-31.6,76.2,0,29.8,10.5,55.2,31.6,76.2,21.1,21.1,46.5,31.6,76.3,31.6s55.2-10.5,76.2-31.6c21.1-21,31.6-46.4,31.6-76.2m-43.3-12.1h0c.9.5,1.8,1,2.6,1.6.4.3.8.7,1.2,1.1,2.6,2.6,4,5.7,4,9.4s-1.3,6.8-4,9.4c-.4.4-.8.8-1.2,1.1-.8.6-1.6,1.2-2.6,1.6l-85.1,53.8c-.5.3-1,.6-1.5,1-1.9,1-3.9,1.5-6.2,1.5-3.7,0-6.8-1.3-9.4-4-2.5-2.5-3.8-5.5-3.9-9V63.5c0-3.5,1.4-6.6,3.9-9.1,2.6-2.6,5.7-3.9,9.4-3.9s4.5.5,6.4,1.5c.5.2.9.5,1.4.9l85.1,53.8Z"/>
                       <path class="play-icon-cls-3" d="M183,106.7h0l-85.1-53.8c-.5-.4-.9-.7-1.4-.9-1.9-1-4-1.5-6.4-1.5-3.7,0-6.8,1.3-9.4,3.9-2.5,2.5-3.8,5.6-3.9,9.1v110.7c0,3.5,1.4,6.5,3.9,9,2.6,2.6,5.7,4,9.4,4s4.3-.5,6.2-1.5c.5-.3,1-.6,1.5-1l85.1-53.8c.9-.5,1.8-1,2.6-1.6.4-.3.8-.7,1.2-1.1,2.6-2.6,4-5.7,4-9.4s-1.3-6.8-4-9.4c-.4-.4-.8-.8-1.2-1.2-.7-.5-1.5-1-2.2-1.4h-.2Z"/>
@@ -1884,7 +1911,43 @@
                   </div>
                   <!-- eof Feedback Message -->
                 </div>
-                <!-- eof Question 1 --> 
+                <!-- eof Question 2 -->
+                <!-- Question 3 -->
+                <div class="question-container question-js">
+                  <!-- Buttons and Icon -->
+                  <p class="question-text">3. Hola, Marcos. Esta es Charo.</p> 
+                  <div class="questionFeedback-button-container">
+                    <div class="dropdown-button">
+                      <label for="frm-whatever" class="sr-only">My field</label>
+                      <select class="appearance-none w-full py-1 px-2 bg-slate-400 whitespace-normal" name="whatever" id="frm-whatever">
+                        <option value="select">Select the correct answer</option>
+                        <option value="correct">Hola Charo, muy contenta en conocerte.</option>
+                        <option value="incorrect">¡Por fin te conozco! Soy Valentina.</option>
+                        <option value="incorrect">Un placer conocerle.</option>
+                        <option value="incorrect">Es un placer conocerte.</option>
+                        <option value="incorrect">¡Hola, también es un placer para nosotros!</option>
+                      </select>
+                      <div class="pointer-events-none absolute right-0 top-0 bottom-0 flex items-center px-2 text-gray-700">
+                          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                          </svg>
+                      </div>
+                    </div>
+                  
+                    <span class="feedback-icon-js feedback-icon"></span>
+                  </div>
+                  <!-- Feedback Message -->
+                  <div class="feedback-message hidden feedback-message-js">
+                    <svg class="feedback-play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226 226.1">
+                      <path class="play-icon-cls-2" d="M226.2,118.8c0-29.8-10.5-55.2-31.6-76.2-21-21-46.4-31.6-76.2-31.6-29.8,0-55.2,10.5-76.3,31.6-21,21.1-31.6,46.5-31.6,76.2,0,29.8,10.5,55.2,31.6,76.2,21.1,21.1,46.5,31.6,76.3,31.6s55.2-10.5,76.2-31.6c21.1-21,31.6-46.4,31.6-76.2m-43.3-12.1h0c.9.5,1.8,1,2.6,1.6.4.3.8.7,1.2,1.1,2.6,2.6,4,5.7,4,9.4s-1.3,6.8-4,9.4c-.4.4-.8.8-1.2,1.1-.8.6-1.6,1.2-2.6,1.6l-85.1,53.8c-.5.3-1,.6-1.5,1-1.9,1-3.9,1.5-6.2,1.5-3.7,0-6.8-1.3-9.4-4-2.5-2.5-3.8-5.5-3.9-9V63.5c0-3.5,1.4-6.6,3.9-9.1,2.6-2.6,5.7-3.9,9.4-3.9s4.5.5,6.4,1.5c.5.2.9.5,1.4.9l85.1,53.8Z"/>
+                      <path class="play-icon-cls-3" d="M183,106.7h0l-85.1-53.8c-.5-.4-.9-.7-1.4-.9-1.9-1-4-1.5-6.4-1.5-3.7,0-6.8,1.3-9.4,3.9-2.5,2.5-3.8,5.6-3.9,9.1v110.7c0,3.5,1.4,6.5,3.9,9,2.6,2.6,5.7,4,9.4,4s4.3-.5,6.2-1.5c.5-.3,1-.6,1.5-1l85.1-53.8c.9-.5,1.8-1,2.6-1.6.4-.3.8-.7,1.2-1.1,2.6-2.6,4-5.7,4-9.4s-1.3-6.8-4-9.4c-.4-.4-.8-.8-1.2-1.2-.7-.5-1.5-1-2.2-1.4h-.2Z"/>
+                      <path class="play-icon-cls-1" d="M226.3,118.8v-.5H10.7v.5c0,29.8,10.5,55.2,31.5,76.2s46.5,31.6,76.2,31.6,55.2-10.5,76.2-31.6c21.1-21,31.6-46.4,31.6-76.2Z"/>
+                    </svg>
+                    <span class="ps-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga modi explicabo excepturi eaque dicta magnam.</span>
+                  </div>
+                  <!-- eof Feedback Message -->
+                </div>
+                <!-- eof Question 3 -->
 
 
 

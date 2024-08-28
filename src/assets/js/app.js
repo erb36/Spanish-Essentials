@@ -31,6 +31,14 @@ document.addEventListener('DOMContentLoaded', function () {
       d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z" />
     </svg>`;
 
+  // SVG icon for dropdown audio answer
+  const DROPDOWN_AUDIO_SVG = `<svg class="feedback-play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226 226.1">
+                      <path class="play-icon-cls-2" d="M226.2,118.8c0-29.8-10.5-55.2-31.6-76.2-21-21-46.4-31.6-76.2-31.6-29.8,0-55.2,10.5-76.3,31.6-21,21.1-31.6,46.5-31.6,76.2,0,29.8,10.5,55.2,31.6,76.2,21.1,21.1,46.5,31.6,76.3,31.6s55.2-10.5,76.2-31.6c21.1-21,31.6-46.4,31.6-76.2m-43.3-12.1h0c.9.5,1.8,1,2.6,1.6.4.3.8.7,1.2,1.1,2.6,2.6,4,5.7,4,9.4s-1.3,6.8-4,9.4c-.4.4-.8.8-1.2,1.1-.8.6-1.6,1.2-2.6,1.6l-85.1,53.8c-.5.3-1,.6-1.5,1-1.9,1-3.9,1.5-6.2,1.5-3.7,0-6.8-1.3-9.4-4-2.5-2.5-3.8-5.5-3.9-9V63.5c0-3.5,1.4-6.6,3.9-9.1,2.6-2.6,5.7-3.9,9.4-3.9s4.5.5,6.4,1.5c.5.2.9.5,1.4.9l85.1,53.8Z"/>
+                      <path class="play-icon-cls-3" d="M183,106.7h0l-85.1-53.8c-.5-.4-.9-.7-1.4-.9-1.9-1-4-1.5-6.4-1.5-3.7,0-6.8,1.3-9.4,3.9-2.5,2.5-3.8,5.6-3.9,9.1v110.7c0,3.5,1.4,6.5,3.9,9,2.6,2.6,5.7,4,9.4,4s4.3-.5,6.2-1.5c.5-.3,1-.6,1.5-1l85.1-53.8c.9-.5,1.8-1,2.6-1.6.4-.3.8-.7,1.2-1.1,2.6-2.6,4-5.7,4-9.4s-1.3-6.8-4-9.4c-.4-.4-.8-.8-1.2-1.2-.7-.5-1.5-1-2.2-1.4h-.2Z"/>
+                      <path class="play-icon-cls-1" d="M226.3,118.8v-.5H10.7v.5c0,29.8,10.5,55.2,31.5,76.2s46.5,31.6,76.2,31.6,55.2-10.5,76.2-31.6c21.1-21,31.6-46.4,31.6-76.2Z"/>
+                    </svg>`;
+
+
 
   let currentAudio = null;
 
@@ -159,6 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const buttons = question.querySelectorAll('button');
 
+
       buttons.forEach((button) => {
         button.addEventListener('click', function () {
           const isCorrect = button.getAttribute('data-answer') === 'correct';
@@ -227,6 +236,113 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Enable the buttons
         const buttons = question.querySelectorAll('button');
+        // buttons.forEach((button) => {
+        //   button.removeAttribute('disabled'); // Enable the button
+        // });
+      });
+    }
+
+    // Attach resetQuiz function to the reset button
+    const resetButton = questionContainer.querySelector('.reset-quiz-btn');
+    if (resetButton) {
+      resetButton.addEventListener('click', resetQuiz);
+    } else {
+      console.log('Reset button not found.');
+    }
+  }
+  // ed test
+  function setupDropdownChoice(container, quizFeedback) {
+    const questionContainer = document.querySelector(`#${container}`);
+    if (!questionContainer) {
+      console.log(`Container with class "${container}" not found.`);
+      return;
+    }
+
+    const questions = questionContainer.querySelectorAll('.question-js');
+    questions.forEach((question, index) => {
+      console.log(`Setting up question ${index + 1}`);
+
+      const dropdowns = question.querySelector('select');
+
+      dropdowns.addEventListener('change', function () {
+        const selectedOption = dropdowns.options[dropdowns.selectedIndex];
+        const isCorrect = selectedOption.getAttribute('value') === 'correct';
+        console.log(isCorrect);
+
+
+        // Handle feedback display based on the answer
+        const feedbackIcon = question.querySelector('.feedback-icon-js');
+        const feedbackMessage = question.querySelector('.feedback-message-js');
+
+        // Access feedback using index + 1 to align with 1-based keys
+        const feedbackIndex = index + 1;
+
+        if (isCorrect) {
+          if (feedbackIcon) {
+            feedbackIcon.innerHTML = CIRCLE_CHECK_SVG; // Display the checkmark icon
+            feedbackIcon.classList.remove('hidden'); // Add green text color
+            feedbackIcon.classList.remove('text-red-700'); // Remove red text color if present
+            feedbackIcon.classList.add('text-green-700');
+          }
+          if (feedbackMessage) {
+            feedbackMessage.innerHTML = DROPDOWN_AUDIO_SVG + quizFeedback[feedbackIndex].correct;
+
+            // feedbackMessage.innerHTML = DROPDOWN_AUDIO_SVG;
+            // feedbackMessage.textContent = quizFeedback[feedbackIndex].correct; // Display "Correct" feedback message
+            feedbackMessage.classList.remove('hidden');
+            feedbackMessage.classList.add('bg-green-100'); // Add light green background
+            feedbackMessage.classList.remove('bg-red-100'); // Remove light red background if present
+            feedbackMessage.classList.add('text-green-700'); // Add green text color
+            feedbackMessage.classList.remove('text-red-700'); // Remove red text color if present
+          }
+        } else {
+          if (feedbackIcon) {
+            feedbackIcon.innerHTML = CIRCLE_XMARK_SVG; // Display the x-mark icon
+            feedbackIcon.classList.remove('hidden');
+            feedbackIcon.classList.remove('text-green-700');
+            feedbackIcon.classList.add('text-red-700');
+          }
+          if (feedbackMessage) {
+            feedbackMessage.textContent = quizFeedback[feedbackIndex].incorrect; // Display "Incorrect" message
+            feedbackMessage.classList.remove('hidden');
+            feedbackMessage.classList.add('bg-red-100'); // Add light red background
+            feedbackMessage.classList.remove('bg-green-100'); // Remove light green background if present
+            feedbackMessage.classList.add('text-red-700'); // Add red text color
+            feedbackMessage.classList.remove('text-green-700'); // Remove green text color if present
+          }
+        }
+
+        //buttons.forEach((btn) => btn.setAttribute('disabled', true));
+      });
+
+    });
+
+    // Function to reset the quiz
+    function resetQuiz() {
+      // Loop through each question and reset it
+      questions.forEach((question) => {
+        // Hide the feedback
+        const feedbackIcon = question.querySelector('.feedback-icon-js');
+        const feedbackMessage = question.querySelector('.feedback-message-js');
+        if (feedbackIcon) {
+          feedbackIcon.innerHTML = ''; // Remove the SVG icons
+          feedbackIcon.classList.add('hidden'); // Hide the icon
+          feedbackIcon.classList.remove('text-green-500', 'text-red-500'); // Remove color classes
+        }
+        if (feedbackMessage) {
+          feedbackMessage.textContent = ''; // Clear the message
+          feedbackMessage.classList.add('hidden'); // Hide the message
+          feedbackMessage.classList.remove('bg-green-100', 'bg-red-100', 'text-green-700', 'text-red-700'); // Remove background and text color classes
+        }
+
+        // Reset the dropdown to the default "Select the correct answer"
+        const dropdown = question.querySelector('select');
+        if (dropdown) {
+          dropdown.selectedIndex = 0; // Reset the dropdown to the first option
+        }
+
+        // Enable the buttons
+        const dropdowns = question.querySelectorAll('option');
         // buttons.forEach((button) => {
         //   button.removeAttribute('disabled'); // Enable the button
         // });
@@ -332,10 +448,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const exercise_match_the_halves_feedback = {
     1: {
-      correct: 'Correct feedback for question 1',
+      correct: 'Correct feedback for dropdown question 1',
       incorrect: 'Incorrect feedback for question 1'
+    },
+    2: {
+      correct: 'Correct feedback for dropdown question 2',
+      incorrect: 'Incorrect feedback for question 2'
+    },
+    3: {
+      correct: 'Correct feedback for dropdown question 3',
+      incorrect: 'Incorrect feedback for question 3'
     }
-  }
+  };
 
 
   // Call the function for the question container
@@ -343,6 +467,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setupBinaryChoice('exercise-formal-informal', exercise_formal_or_informal_feedback);
 
+  setupDropdownChoice('exercise-match-the-halves', exercise_match_the_halves_feedback);
 
 
 

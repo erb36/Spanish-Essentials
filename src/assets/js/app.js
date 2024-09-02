@@ -284,16 +284,16 @@ document.addEventListener('DOMContentLoaded', function () {
             feedbackIcon.classList.remove('text-red-700'); // Remove red text color if present
             feedbackIcon.classList.add('text-green-700');
           }
+          // feedback audio icon if correct
           if (feedbackMessage) {
             feedbackMessage.innerHTML = DROPDOWN_AUDIO_SVG + quizFeedback[feedbackIndex].correct;
-
-            // feedbackMessage.innerHTML = DROPDOWN_AUDIO_SVG;
-            // feedbackMessage.textContent = quizFeedback[feedbackIndex].correct; // Display "Correct" feedback message
             feedbackMessage.classList.remove('hidden');
             feedbackMessage.classList.add('bg-green-100'); // Add light green background
             feedbackMessage.classList.remove('bg-red-100'); // Remove light red background if present
             feedbackMessage.classList.add('text-green-700'); // Add green text color
             feedbackMessage.classList.remove('text-red-700'); // Remove red text color if present
+            feedbackMessage.classList.add('hover:bg-green-200'); // add green hover color
+            feedbackMessage.classList.add('hover:cursor-pointer'); // add cursor hover pointer
           }
         } else {
           if (feedbackIcon) {
@@ -309,6 +309,8 @@ document.addEventListener('DOMContentLoaded', function () {
             feedbackMessage.classList.remove('bg-green-100'); // Remove light green background if present
             feedbackMessage.classList.add('text-red-700'); // Add red text color
             feedbackMessage.classList.remove('text-green-700'); // Remove green text color if present
+            feedbackMessage.classList.remove('hover:bg-green-200'); // Remove green hover color if present
+            feedbackMessage.classList.remove('hover:cursor-pointer'); // remove cursor hover pointer if present
           }
         }
 
@@ -448,15 +450,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const exercise_match_the_halves_feedback = {
     1: {
-      correct: 'Correct feedback for dropdown question 1',
+      correct: ' Correct feedback for dropdown question 1',
       incorrect: 'Incorrect feedback for question 1'
     },
     2: {
-      correct: 'Correct feedback for dropdown question 2',
+      correct: ' Correct feedback for dropdown question 2',
       incorrect: 'Incorrect feedback for question 2'
     },
     3: {
-      correct: 'Correct feedback for dropdown question 3',
+      correct: ' Correct feedback for dropdown question 3',
       incorrect: 'Incorrect feedback for question 3'
     }
   };

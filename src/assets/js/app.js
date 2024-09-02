@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log('Reset button not found.');
     }
   }
-  // ed test
+  // ed test for dropdown quiz functionality
   function setupDropdownChoice(container, quizFeedback) {
     const questionContainer = document.querySelector(`#${container}`);
     if (!questionContainer) {
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function () {
             feedbackMessage.classList.remove('bg-red-100'); // Remove light red background if present
             feedbackMessage.classList.add('text-green-700'); // Add green text color
             feedbackMessage.classList.remove('text-red-700'); // Remove red text color if present
-            feedbackMessage.classList.add('hover:bg-green-200'); // add green hover color
+            feedbackMessage.classList.add('hover:bg-green-200'); // add green background hover color
             feedbackMessage.classList.add('hover:cursor-pointer'); // add cursor hover pointer
           }
         } else {
@@ -309,7 +309,7 @@ document.addEventListener('DOMContentLoaded', function () {
             feedbackMessage.classList.remove('bg-green-100'); // Remove light green background if present
             feedbackMessage.classList.add('text-red-700'); // Add red text color
             feedbackMessage.classList.remove('text-green-700'); // Remove green text color if present
-            feedbackMessage.classList.remove('hover:bg-green-200'); // Remove green hover color if present
+            feedbackMessage.classList.remove('hover:bg-green-200'); // Remove green background hover color if present
             feedbackMessage.classList.remove('hover:cursor-pointer'); // remove cursor hover pointer if present
           }
         }

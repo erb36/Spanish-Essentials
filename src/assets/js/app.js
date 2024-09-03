@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     //accordion-container-1
-    console.log('====parentElement=====' + parentElement.id);
+    // console.log('====parentElement=====' + parentElement.id);  ---------------------- commented out for dropdown testing
 
     let temp = elementId.split('-');
     // Assuming temp is ['accordion', 'container', '1']
@@ -63,20 +63,20 @@ document.addEventListener('DOMContentLoaded', function () {
     let fileNamePrefix = `${firstElement}-${lastElement}`;
 
 
-    console.log('=====fileNamePrefix is: ' + fileNamePrefix);
+    // console.log('=====fileNamePrefix is: ' + fileNamePrefix); ----------------- commented out for dropdown testing
 
 
     // Remove '-container' from the elementId
     let containerId = elementId.replace('-container', '');
-    console.log('containerId is: ' + containerId);
+    // console.log('containerId is: ' + containerId); --------------------------- commented out for dropdown testing
 
     // Construct the new id by adding 'item-container' to the base id
     let newElementId = `${containerId}-item-container`;
-    console.log('newElementId is: ' + newElementId);
+    // console.log('newElementId is: ' + newElementId); ------------------  commented out for dropdown testing
 
     // target this new element
     let accordionItemContainer = document.getElementById(newElementId);
-    console.log('accordionItemContainer is: ' + accordionItemContainer.id);
+    // console.log('accordionItemContainer is: ' + accordionItemContainer.id);
     if (!accordionItemContainer) {
       console.log(`New div with id "${newElementId}" not found.`);
       return;
@@ -87,18 +87,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Count the number of accordion items
     let numberOfAccordionItems = accordionItems.length;
-    console.log(`Number of accordion items: ${numberOfAccordionItems}`);
+    // console.log(`Number of accordion items: ${numberOfAccordionItems}`); --------------- commented out for dropdown testing
 
     accordionItems.forEach((item, index) => {
       // Log the found elements
-      console.log('Found accordion item:', item);
+      // console.log('Found accordion item:', item); -------------------- commented out for dropdown testing
 
       // Add click event listener to each item
       item.addEventListener('click', () => {
-        console.log(`Accordion item ${index + 1} clicked`);
+        // console.log(`Accordion item ${index + 1} clicked`); ---------------- commented out for dropdown testing
         // Construct the path to the corresponding audio file
         let audioFilePath = `${AUDIO_PATH}/${fileNamePrefix}/${index + 1}.mp3`;
-        console.log('Playing audio file:', audioFilePath);
+        // console.log('Playing audio file:', audioFilePath); ----------------  commented out for dropdown testing
 
         // Check if there is currently playing audio
         if (currentAudio) {
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Hide all elements with the class .english inside the accordion
     const englishBlocks = accordionItemContainer.querySelectorAll('.english');
-    console.log('englishBlocks are:', englishBlocks);
+    // console.log('englishBlocks are:', englishBlocks);  ----------------  commented out for dropdown testing
     englishBlocks.forEach(block => {
       block.classList.add('hidden');
     });
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       // Find the toggle-english button inside the parentElement
-      console.log("---parentElement is: " + parentElement.id)
+      // console.log("---parentElement is: " + parentElement.id)     -----------  commented out for dropdown testing
       const toggleEnglishButton = parentElement.querySelector('.toggle-english');
 
 
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const questions = questionContainer.querySelectorAll('.question-js');
 
     questions.forEach((question, index) => {
-      console.log(`Setting up question ${index + 1}`);
+      // console.log(`Setting up question ${index + 1}`); --------------------- commented out for dropdown testing
 
       const buttons = question.querySelectorAll('button');
 
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log('Reset button not found.');
     }
   }
-  // ed test for dropdown quiz functionality
+  // ed test for dropdown quiz functionality *********************************************
   function setupDropdownChoice(container, quizFeedback) {
     const questionContainer = document.querySelector(`#${container}`);
     if (!questionContainer) {
@@ -264,11 +264,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const dropdowns = question.querySelector('select');
 
+
       dropdowns.addEventListener('change', function () {
         const selectedOption = dropdowns.options[dropdowns.selectedIndex];
         const isCorrect = selectedOption.getAttribute('value') === 'correct';
-        console.log(isCorrect);
-
 
         // Handle feedback display based on the answer
         const feedbackIcon = question.querySelector('.feedback-icon-js');
@@ -276,6 +275,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Access feedback using index + 1 to align with 1-based keys
         const feedbackIndex = index + 1;
+
 
         if (isCorrect) {
           if (feedbackIcon) {
@@ -359,6 +359,7 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log('Reset button not found.');
     }
   }
+  // end of ed dropdown test ************************************
 
 
 

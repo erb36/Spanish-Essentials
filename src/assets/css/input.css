@@ -258,5 +258,5 @@
 }
 
 .dropdown-button {
-  @apply relative border rounded  w-full border-gray-300 bg-slate-400 text-white shadow-lg;
+  @apply relative border w-4/12 rounded border-gray-300 bg-slate-400 text-white shadow-lg;
 }

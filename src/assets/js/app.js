@@ -250,6 +250,9 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log('Reset button not found.');
     }
   }
+
+
+
   // ed test for dropdown quiz functionality *********************************************
   function setupDropdownChoice(container, quizFeedback) {
     const questionContainer = document.querySelector(`#${container}`);
@@ -264,7 +267,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const dropdowns = question.querySelector('select');
 
-
       dropdowns.addEventListener('change', function () {
         const selectedOption = dropdowns.options[dropdowns.selectedIndex];
         const isCorrect = selectedOption.getAttribute('value') === 'correct';
@@ -276,7 +278,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Access feedback using index + 1 to align with 1-based keys
         const feedbackIndex = index + 1;
 
-
         if (isCorrect) {
           if (feedbackIcon) {
             feedbackIcon.innerHTML = CIRCLE_CHECK_SVG; // Display the checkmark icon
@@ -284,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
             feedbackIcon.classList.remove('text-red-700'); // Remove red text color if present
             feedbackIcon.classList.add('text-green-700');
           }
-          // feedback audio icon if correct
+          // feedback message and audio icon if correct
           if (feedbackMessage) {
             feedbackMessage.innerHTML = DROPDOWN_AUDIO_SVG + quizFeedback[feedbackIndex].correct;
             feedbackMessage.classList.remove('hidden');
@@ -292,8 +293,14 @@ document.addEventListener('DOMContentLoaded', function () {
             feedbackMessage.classList.remove('bg-red-100'); // Remove light red background if present
             feedbackMessage.classList.add('text-green-700'); // Add green text color
             feedbackMessage.classList.remove('text-red-700'); // Remove red text color if present
-            feedbackMessage.classList.add('hover:bg-green-200'); // add green background hover color
-            feedbackMessage.classList.add('hover:cursor-pointer'); // add cursor hover pointer
+            feedbackMessage.classList.add('hover:bg-green-200'); // Add green background hover color
+            feedbackMessage.classList.add('hover:cursor-pointer'); // Add cursor hover pointer
+
+            // Attach click event to feedback message to play audio
+            feedbackMessage.addEventListener('click', function () {
+              const audio = new Audio(`assets/media/accordion-9/${feedbackIndex}.mp3`);
+              audio.play();
+            });
           }
         } else {
           if (feedbackIcon) {
@@ -313,17 +320,12 @@ document.addEventListener('DOMContentLoaded', function () {
             feedbackMessage.classList.remove('hover:cursor-pointer'); // remove cursor hover pointer if present
           }
         }
-
-        //buttons.forEach((btn) => btn.setAttribute('disabled', true));
       });
-
     });
 
     // Function to reset the quiz
     function resetQuiz() {
-      // Loop through each question and reset it
       questions.forEach((question) => {
-        // Hide the feedback
         const feedbackIcon = question.querySelector('.feedback-icon-js');
         const feedbackMessage = question.querySelector('.feedback-message-js');
         if (feedbackIcon) {
@@ -334,24 +336,16 @@ document.addEventListener('DOMContentLoaded', function () {
         if (feedbackMessage) {
           feedbackMessage.textContent = ''; // Clear the message
           feedbackMessage.classList.add('hidden'); // Hide the message
-          feedbackMessage.classList.remove('bg-green-100', 'bg-red-100', 'text-green-700', 'text-red-700'); // Remove background and text color classes
+          feedbackMessage.classList.remove('bg-green-100', 'bg-red-100', 'text-green-700', 'text-red-700', 'hover:bg-green-200', 'hover:cursor-pointer'); // Remove background and text color classes
         }
 
-        // Reset the dropdown to the default "Select the correct answer"
         const dropdown = question.querySelector('select');
         if (dropdown) {
           dropdown.selectedIndex = 0; // Reset the dropdown to the first option
         }
-
-        // Enable the buttons
-        const dropdowns = question.querySelectorAll('option');
-        // buttons.forEach((button) => {
-        //   button.removeAttribute('disabled'); // Enable the button
-        // });
       });
     }
 
-    // Attach resetQuiz function to the reset button
     const resetButton = questionContainer.querySelector('.reset-quiz-btn');
     if (resetButton) {
       resetButton.addEventListener('click', resetQuiz);
@@ -359,6 +353,8 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log('Reset button not found.');
     }
   }
+
+
   // end of ed dropdown test ************************************
 
 
@@ -459,6 +455,14 @@ document.addEventListener('DOMContentLoaded', function () {
       incorrect: 'Incorrect feedback for question 2'
     },
     3: {
+      correct: ' Correct feedback for dropdown question 3',
+      incorrect: 'Incorrect feedback for question 3'
+    },
+    4: {
+      correct: ' Correct feedback for dropdown question 3',
+      incorrect: 'Incorrect feedback for question 3'
+    },
+    5: {
       correct: ' Correct feedback for dropdown question 3',
       incorrect: 'Incorrect feedback for question 3'
     }

@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let fileNamePrefix = `${firstElement}-${lastElement}`;
 
 
-    // console.log('=====fileNamePrefix is: ' + fileNamePrefix); ----------------- commented out for dropdown testing
+    // console.log('=====fileNamePrefix is: ' + fileNamePrefix);   ----------------------- commented out for dropdown testing
 
 
     // Remove '-container' from the elementId
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const questions = questionContainer.querySelectorAll('.question-js');
     questions.forEach((question, index) => {
-      console.log(`Setting up question ${index + 1}`);
+      // console.log(`Setting up question ${index + 1}`);
 
       const dropdowns = question.querySelector('select');
 
@@ -298,7 +298,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Attach click event to feedback message to play audio
             feedbackMessage.addEventListener('click', function () {
-              const audio = new Audio(`assets/media/accordion-9/${feedbackIndex}.mp3`);
+              const audio = new Audio(`${AUDIO_PATH}/${container}/${feedbackIndex}.mp3`);
+              // const audio = new Audio(`${AUDIO_PATH}/${fileNamePrefix}/${feedbackIndex}.mp3`); - dropdown test!!
               audio.play();
             });
           }
@@ -369,6 +370,7 @@ document.addEventListener('DOMContentLoaded', function () {
   setupAccordion('accordion-container-4');
   setupAccordion('accordion-container-5');
   setupAccordion('accordion-container-6');
+  // setupAccordion('accordion-container-9'); - dropdown test!!
 
 
 
@@ -468,13 +470,38 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
+  const exercise_match_the_halves_feedback_1 = {
+    1: {
+      correct: ' Correct feedback for dropdown question 11',
+      incorrect: 'Incorrect feedback for question 11'
+    },
+    2: {
+      correct: ' Correct feedback for dropdown question 21',
+      incorrect: 'Incorrect feedback for question 21'
+    },
+    3: {
+      correct: ' Correct feedback for dropdown question 31',
+      incorrect: 'Incorrect feedback for question 31'
+    },
+    4: {
+      correct: ' Correct feedback for dropdown question 31',
+      incorrect: 'Incorrect feedback for question 31'
+    },
+    5: {
+      correct: ' Correct feedback for dropdown question 31',
+      incorrect: 'Incorrect feedback for question 31'
+    }
+  };
+
 
   // Call the function for the question container
   setupBinaryChoice('exercise-greeting-or-goodbye', exercise_greeting_or_goodbye_feedback);
 
   setupBinaryChoice('exercise-formal-informal', exercise_formal_or_informal_feedback);
 
-  setupDropdownChoice('exercise-match-the-halves', exercise_match_the_halves_feedback);
+  setupDropdownChoice('exercise-match-the-halves-1', exercise_match_the_halves_feedback);
+
+  setupDropdownChoice('exercise-match-the-halves-2', exercise_match_the_halves_feedback_1);
 
 
 

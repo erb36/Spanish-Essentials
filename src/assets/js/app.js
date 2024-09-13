@@ -470,29 +470,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  const exercise_match_the_halves_feedback_1 = {
-    1: {
-      correct: ' Correct feedback for dropdown question 11',
-      incorrect: 'Incorrect feedback for question 11'
-    },
-    2: {
-      correct: ' Correct feedback for dropdown question 21',
-      incorrect: 'Incorrect feedback for question 21'
-    },
-    3: {
-      correct: ' Correct feedback for dropdown question 31',
-      incorrect: 'Incorrect feedback for question 31'
-    },
-    4: {
-      correct: ' Correct feedback for dropdown question 31',
-      incorrect: 'Incorrect feedback for question 31'
-    },
-    5: {
-      correct: ' Correct feedback for dropdown question 31',
-      incorrect: 'Incorrect feedback for question 31'
-    }
-  };
-
 
   // Call the function for the question container
   setupBinaryChoice('exercise-greeting-or-goodbye', exercise_greeting_or_goodbye_feedback);
@@ -500,10 +477,6 @@ document.addEventListener('DOMContentLoaded', function () {
   setupBinaryChoice('exercise-formal-informal', exercise_formal_or_informal_feedback);
 
   setupDropdownChoice('exercise-match-the-halves-1', exercise_match_the_halves_feedback);
-
-  setupDropdownChoice('exercise-match-the-halves-2', exercise_match_the_halves_feedback_1);
-
-
 
 
 
